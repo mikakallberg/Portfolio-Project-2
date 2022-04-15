@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr&family=Titan+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
 body{
     background-color: #89dee2;
     font-family: "Mitr", sans-serif;
@@ -16,6 +22,7 @@ h1, h2{
     width: 75%;
     height: fit-content;
     padding: 1%;
+    margin-top: 2.5%;
     margin-left: 10%;
 }
 
@@ -151,7 +158,6 @@ h3{
 }
 
 #second-heading{
-    /*height: 100px;*/
     padding: 1% 0;
     margin: 2% 0;
 }
