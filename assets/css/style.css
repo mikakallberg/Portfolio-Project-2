@@ -58,18 +58,24 @@ h1, h2{
 }
 
 #option-one{
+    float: left;
 
 }
 
 #option-two{
-    
+    clear: both;
+    float: right;
 }
 
 #option-three{
+    clear: both;
+    float: left;
     
 }
 
 #option-four{
+    clear: both;
+    float: right;
     
 }
 /*Media Queries*/
