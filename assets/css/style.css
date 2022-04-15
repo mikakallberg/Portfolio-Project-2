@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr&family=Titan+One&display=swap');
 
 body{
+    background-color: #89dee2;
     font-family: "Mitr", sans-serif;
     color: #253741;
 }
+
+h1, h2{
+    font-family: "Titan One", sans-serif;
+}
 .heading{
     background-color: #d7baad;
-    font-family: "Titan One", sans-serif;
     font-size: 4rem;
     text-align: center;
     width: 75%;
@@ -21,6 +25,12 @@ body{
 
 }
 
+#start-btn{
+    background-color: #16c2d5;
+    color: #253741;
+}
+
+/*Media Queries*/
 /* For small screens 700px and down*/
 @media screen and (max-width: 700px){
 .heading{
