@@ -30,6 +30,9 @@ _The high score page_
 
 ### Validator testing
 
+### Bugs while working
+- Thought about putting HTML files in a folder, but while this looks good organizing the files, it doesn't work when site is launched. So back the files out and removed html folder.
+
 ### Unfixed bugs
 
 ### credits
