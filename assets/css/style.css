@@ -21,13 +21,24 @@ h1, h2{
     background-color: #d7baad;
     text-align: center;
     width: 75%;
+    height: 200px;
     margin-left: 10%;
 
 }
 
+.rules{
+    
+}
+
+#start-game{
+    
+}
+
 #start-btn{
+    width: inherit;
     background-color: #16c2d5;
     color: #253741;
+    padding: 2%;
 }
 
 /*Media Queries*/
