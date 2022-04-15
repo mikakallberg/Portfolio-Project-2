@@ -3,15 +3,16 @@ body{
     background-color: #89dee2;
     font-family: "Mitr", sans-serif;
     color: #253741;
+    text-align: center;
 }
 
 h1, h2{
     font-family: "Titan One", sans-serif;
 }
+
 .heading{
     background-color: #d7baad;
     font-size: 4rem;
-    text-align: center;
     width: 75%;
     height: fit-content;
     padding: 1%;
@@ -20,7 +21,6 @@ h1, h2{
 
 .game-area{
     background-color: #d7baad;
-    text-align: center;
     width: 75%;
     height: 400px;
     padding: 1%;
@@ -30,6 +30,7 @@ h1, h2{
 
 /*Index page*/
 .rules{
+    background-color: #d7baad;
     padding: 1%;
     padding-bottom: 10%;
 }
@@ -58,7 +59,6 @@ h1, h2{
 
 #question-area{
     background-color: #d7baad;
-    text-align: center;
     width: 75%;
     height: 200px;
     padding: 1%;
@@ -74,32 +74,32 @@ h1, h2{
     margin-bottom: 5%;
 }
 #option-one{
-    float: left;
     background-color: #d7baad;
+    float: left;
     padding: 50px;
 }
 
 #option-two{
+    background-color: #d7baad;
     clear: both;
     float: right;
-    background-color: #d7baad;
     padding: 50px;
     margin-top: -125px;
 }
 
 #option-three{
+    background-color: #d7baad;
     clear: both;
     float: left;
-    background-color: #d7baad;
     padding: 50px;
     margin-top: 150px;
     
 }
 
 #option-four{
+    background-color: #d7baad;
     clear: both;
     float: right;
-    background-color: #d7baad;
     padding: 50px;
     margin-top: -125px;
 }
@@ -107,8 +107,7 @@ h1, h2{
 .score-area{
     clear: both;
     background-color: #d7baad;
-    text-align: center;
-    height: 200px;
+    height: 250px;
     width: 75%;
     padding: 1%;
     margin-left: 10%;
@@ -117,13 +116,13 @@ h1, h2{
 #score-line-1{
     padding: 2% 0;
     height: fit-content;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 #score-line-2{
     padding: 2% 0;
     height: fit-content;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 
@@ -142,6 +141,24 @@ h3{
 #ten-btn{
     padding: 2% 3%;
 }
+
+/*Result page*/
+
+.highscore{
+    background-color: #d7baad;
+    width: 75%;
+    margin-left: 10%;
+}
+
+#second-heading{
+    height: 200px;
+    margin-bottom: 2%;
+}
+
+#score-list{
+    height: 400px;
+}
+
 /*Media Queries*/
 /* For small screens 700px and down*/
 @media screen and (max-width: 700px){
