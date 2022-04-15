@@ -110,9 +110,38 @@ h1, h2{
     clear: both;
     background-color: #d7baad;
     text-align: center;
+    height: 200px;
     width: 75%;
     padding: 1%;
     margin-left: 10%;
+}
+
+#score-line-1{
+    padding: 2% 0;
+    height: fit-content;
+    margin-top: 25px;
+}
+
+#score-line-2{
+    padding: 2% 0;
+    height: fit-content;
+    margin-top: 25px;
+}
+
+h3{
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 150%;
+    width: 2%;
+    padding: 2% 4%;
+    border: 2px solid #253741;
+    border-radius: 50%;
+    margin: 0 3%;
+}
+
+#ten-btn{
+    padding: 2% 3%;
 }
 /*Media Queries*/
 /* For small screens 700px and down*/
