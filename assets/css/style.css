@@ -77,8 +77,6 @@ h1, h2{
     float: left;
     background-color: #d7baad;
     padding: 50px;
-    
-
 }
 
 #option-two{
@@ -128,8 +126,9 @@ h1, h2{
     margin-top: 25px;
 }
 
+
 h3{
-    display: inline;
+    display: inline; /*looked up how to get items inline from css-tricks.com: https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/*/
     list-style-type: none;
     text-decoration: none;
     font-size: 150%;
