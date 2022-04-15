@@ -151,8 +151,9 @@ h3{
 }
 
 #second-heading{
-    height: 100px;
-    margin-bottom: 2%;
+    /*height: 100px;*/
+    padding: 1% 0;
+    margin: 2% 0;
 }
 
 #score-list{
