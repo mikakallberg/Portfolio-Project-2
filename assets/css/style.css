@@ -2,11 +2,12 @@
 
 body{
     font-family: "Mitr", sans-serif;
+    color: #253741;
 }
 .heading{
     background-color: #d7baad;
-    color: #253741;
     font-family: "Titan One", sans-serif;
+    font-size: 4rem;
     text-align: center;
     width: 75%;
     margin-left: 10%;
@@ -14,9 +15,24 @@ body{
 
 .game-area{
     background-color: #d7baad;
-    color: #253741;
     text-align: center;
     width: 75%;
     margin-left: 10%;
 
+}
+
+/* For small screens 700px and down*/
+@media screen and (max-width: 700px){
+.heading{
+    font-size: 2rem;
+}
+    
+}
+
+/*For very small screens 400px and down*/
+@media screen and (max-width: 400px){
+    .heading{
+        font-size: 1.5rem;
+    }
+    
 }
