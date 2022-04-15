@@ -21,13 +21,13 @@ h1, h2{
     background-color: #d7baad;
     text-align: center;
     width: 75%;
-    height: 200px;
+    height: 400px;
     margin-left: 10%;
 
 }
 
 .rules{
-    
+    padding: 1%;
 }
 
 #start-game{
