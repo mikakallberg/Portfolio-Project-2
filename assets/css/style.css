@@ -57,6 +57,23 @@ h1, h2{
     margin-left: 10%;
 }
 
+#question-area{
+    background-color: #d7baad;
+    text-align: center;
+    width: 75%;
+    height: 200px;
+    padding: 1%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+#option-area{
+    width: 75%;
+    height: 200px;
+    padding: 1%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
 #option-one{
     float: left;
 
