@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr&family=Titan+One&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 body{
     background-color: #89dee2;
     font-family: "Mitr", sans-serif;
@@ -69,7 +75,7 @@ h1, h2{
 
 #option-area{
     width: 75%;
-    height: 200px;
+    height: 400px;
     padding: 1%;
     margin-left: 10%;
     margin-bottom: 5%;
@@ -78,6 +84,7 @@ h1, h2{
     float: left;
     background-color: #d7baad;
     padding: 50px;
+    
 
 }
 
@@ -86,6 +93,7 @@ h1, h2{
     float: right;
     background-color: #d7baad;
     padding: 50px;
+    margin-top: -125px;
 }
 
 #option-three{
@@ -93,6 +101,7 @@ h1, h2{
     float: left;
     background-color: #d7baad;
     padding: 50px;
+    margin-top: 150px;
     
 }
 
@@ -101,7 +110,7 @@ h1, h2{
     float: right;
     background-color: #d7baad;
     padding: 50px;
-    
+    margin-top: -125px;
 }
 
 .score-area{
