@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr&family=Titan+One&display=swap');
 
+body{
+    font-family: "Mitr", sans-serif;
+}
 .heading{
     background-color: #d7baad;
     color: #253741;
-    font-family: titan one, sans-serif;
+    font-family: "Titan One", sans-serif;
     text-align: center;
     width: 75%;
     margin-left: 10%;
+}
+
+.game-area{
+    background-color: #d7baad;
+    color: #253741;
+    text-align: center;
+    width: 75%;
+    margin-left: 10%;
+
 }
