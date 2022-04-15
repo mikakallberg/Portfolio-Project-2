@@ -29,6 +29,7 @@ h1, h2{
     margin-bottom: 5%;
 }
 
+/*Index page*/
 .rules{
     padding: 1%;
     padding-bottom: 10%;
@@ -46,6 +47,31 @@ h1, h2{
     border-radius: 75%;
 }
 
+/*Quizz page*/
+
+#timer{
+    background-color: #d7baad;
+    width: 75%;
+    text-align: center;
+    padding: 1%;
+    margin-left: 10%;
+}
+
+#option-one{
+
+}
+
+#option-two{
+    
+}
+
+#option-three{
+    
+}
+
+#option-four{
+    
+}
 /*Media Queries*/
 /* For small screens 700px and down*/
 @media screen and (max-width: 700px){
