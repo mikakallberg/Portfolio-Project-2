@@ -76,24 +76,36 @@ h1, h2{
 }
 #option-one{
     float: left;
+    background-color: #d7baad;
+    padding: 50px;
 
 }
 
 #option-two{
     clear: both;
     float: right;
+    background-color: #d7baad;
+    padding: 50px;
 }
 
 #option-three{
     clear: both;
     float: left;
+    background-color: #d7baad;
+    padding: 50px;
     
 }
 
 #option-four{
     clear: both;
     float: right;
+    background-color: #d7baad;
+    padding: 50px;
     
+}
+
+.score-area{
+    clear: both;
 }
 /*Media Queries*/
 /* For small screens 700px and down*/
