@@ -165,6 +165,18 @@ h3{
     margin: 0 3%;
 }
 
+.correct {
+    background-color: #00cc99;
+    border: #009973 solid;
+    border-radius: 50%;
+}
+
+.incorrect {
+    background-color: #ff6666;
+    border: #cc0000 solid;
+    border-radius: 50%;
+}
+
 #ten-btn{
     padding: 1% 1.5%;
 }
