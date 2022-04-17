@@ -38,6 +38,8 @@ h1, h2{
 
 #start-btn:hover, #option-one:hover, #option-two:hover, #option-three:hover, #option-four:hover{
     box-shadow: #5d8aa2 0px 6px 14px;
+    cursor: pointer;
+    transform: scale(1.03); /*style drawn from Brian Design on Youtube https://www.youtube.com/watch?v=f4fB9Xg2JEY*/
 }
 
 /*Index page*/
