@@ -1,7 +1,11 @@
 //Elements I want to affected by JavaScript
+const timer = document.getElementById('#timer');
 const questionArea = document.getElementById('#question-area');
-const options = document.getElementsByClassName('.options');
-const scores = document.getElementsByClassName('.scores');
+const optionOne = document.getElementById('#option-one');
+const optionTwo = document.getElementById('#option-two');
+const optionThree = document.getElementById('#option-three');
+const optionFour = document.getElementById('#option-four');
+const scoresBtn = document.getElementsByClassName('.score-btn');
 
 //Quiz
 function results (){}
@@ -43,7 +47,7 @@ let myQuestions = [
 ];
 
 const SCORE_POINTS = 10%
-const MAX_QUESTIONS = 10
+const MAX_QUESTIONS = 2
 
 function startGame = () =>{
     questionCounter = 0;
