@@ -1,7 +1,7 @@
 //Elements affected by JavaScript
-const question = document.getElementById(#question-area);
-const options = document.getElementsByClassName(.options);
-const scores = document.getElementsByClassName(.scores);
+const questionArea = document.getElementById('#question-area');
+const options = document.getElementsByClassName('.options');
+const scores = document.getElementsByClassName('.scores');
 
 //Baseline for JavScript
 let currentQuestion = {};
@@ -10,9 +10,11 @@ let score = 0;
 let questionCounter = 0; 
 let availableQuestions = [];
 
+
+
 //Questions 
 
-let question = [
+let myQuestions = [
     {
         questions: 'Which option contains organelles?',
         option-one: 'Nucleus, Mitochondrion, Rough endoplasmic reticulum, Maxilla',
@@ -93,6 +95,10 @@ let question = [
         option-four: 'Renal ganglion',
         answer: 'Nephrone',
     }
-]
+];
+
+const SCORE_POINTS = 10%
+const MAX_QUESTIONS = 10
+
 
 
