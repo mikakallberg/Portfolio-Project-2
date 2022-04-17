@@ -26,20 +26,20 @@ let myQuestions = [
     {
         questions: 'Which option contains organelles?',
         options{
-            option1: 'Nucleus, Mitochondrion, Rough endoplasmic reticulum, Maxilla',
-            option2: 'Mitochondrion, Nucleus, Proteasome, Peroxisome',
-            option3: 'Smooth endoplasmic reticulum, Ribosome, Nucleus, Epicondyle',
-            option4: 'Golgi complex, Ribosome, Miochondrion, Ulna'
+            optionOne: 'Nucleus, Mitochondrion, Rough endoplasmic reticulum, Maxilla',
+            optionTwo: 'Mitochondrion, Nucleus, Proteasome, Peroxisome',
+            optionThree: 'Smooth endoplasmic reticulum, Ribosome, Nucleus, Epicondyle',
+            optionFour: 'Golgi complex, Ribosome, Miochondrion, Ulna'
         },
         correctAnswer: 'Mitochondrion, Nucleus, Proteasome, Peroxisome',
     },
     {
         questions: 'Which protein is NOT a part of the cellmembrane?',
         options{
-            option1: 'Ion channel',
-            option2: 'Enzyme',
-            option3: 'Linker',
-            option4: 'Transponder',
+            optionOne: 'Ion channel',
+            optionTwo: 'Enzyme',
+            optionThree: 'Linker',
+            optionFour: 'Transponder',
         }
         correctAnswer: 'Transponder',
     },
