@@ -42,6 +42,12 @@ h1, h2{
     transform: scale(1.03); /*style drawn from Brian Design on Youtube https://www.youtube.com/watch?v=f4fB9Xg2JEY*/
 }
 
+/*fill username: .btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}*/
+
 /*Index page*/
 .game-area{
     background-color: #d7baad;
