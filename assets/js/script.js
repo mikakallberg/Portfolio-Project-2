@@ -8,7 +8,8 @@ const optionFour = document.getElementById('#option-four');
 const scoresBtn = document.getElementsByClassName('.score-btn');
 //After game player enters username to save score to resultpage
 const username = document.getElementById('start-game');
-//
+//Elements from the result.html that I want to affect with JS
+const scoreList = document.getElementById('score-list');
 
 
 //scores.addEventlistener('Click', showResults);<----MUST FIX
