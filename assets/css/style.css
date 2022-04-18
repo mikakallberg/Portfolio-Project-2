@@ -104,7 +104,7 @@ h1, h2{
     float: left;
     padding: 50px;
     height: fit-content;
-    width: 40%;
+    width: 35%;
 }
 
 #option-two{
@@ -113,7 +113,7 @@ h1, h2{
     float: right;
     padding: 50px;
     height: fit-content;
-    width: 40%;
+    width: 35%;
     margin-top: -125px;
 }
 
@@ -123,7 +123,7 @@ h1, h2{
     float: left;
     padding: 50px;
     height: fit-content;
-    width: 40%;
+    width: 35%;
     margin-top: 150px;
     
 }
@@ -134,17 +134,18 @@ h1, h2{
     float: right;
     padding: 50px;
     height: fit-content;
-    width: 40%;
+    width: 35%;
     margin-top: -125px;
 }
 
 .score-area{
     clear: both;
     background-color: #d7baad;
-    height: 250px;
+    height: fit-content;
     width: 75%;
     padding: 1%;
     margin-left: 10%;
+    margin-top: 2%;
 }
 
 #score-line-1{
@@ -215,6 +216,30 @@ h3{
 
 #start-btn{
     padding: 50px;
+}
+#option-one{
+    float: none;
+}
+#option-two{
+    clear: none;
+    float: none;
+    margin-top: 1%;
+
+}
+#option-three{
+    clear: none;
+    float: none;
+    margin-top: 1%;
+}
+#option-four{
+    clear: none;
+    float: none;
+    margin-top: 1%;
+}
+
+.score-area{
+    clear: none;
+    margin-top: 1%;
 }
     
 }
