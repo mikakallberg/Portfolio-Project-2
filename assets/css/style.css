@@ -103,6 +103,8 @@ h1, h2{
     background-color: #d7baad;
     float: left;
     padding: 50px;
+    height: fit-content;
+    width: 40%;
 }
 
 #option-two{
@@ -110,6 +112,8 @@ h1, h2{
     clear: both;
     float: right;
     padding: 50px;
+    height: fit-content;
+    width: 40%;
     margin-top: -125px;
 }
 
@@ -118,6 +122,8 @@ h1, h2{
     clear: both;
     float: left;
     padding: 50px;
+    height: fit-content;
+    width: 40%;
     margin-top: 150px;
     
 }
@@ -127,6 +133,8 @@ h1, h2{
     clear: both;
     float: right;
     padding: 50px;
+    height: fit-content;
+    width: 40%;
     margin-top: -125px;
 }
 
