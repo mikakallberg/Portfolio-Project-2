@@ -170,7 +170,7 @@ function iterateQuestions(id){
         iterateQuestions(id);
         console.log(id);
     }
-    if (result = [counter] || result < 10){
+    if (result = [0] || result < 10){
         counter++
         iterateQuestions(id);
         console.log(result);
