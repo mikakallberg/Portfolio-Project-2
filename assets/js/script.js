@@ -217,7 +217,7 @@ const myQuestions = [
 const results = Array.from(document.getElementsByClassName('score-btn'));
 
 let start = true;
-let counter = 0;
+var counter = 0;
 
 
 function iterateQuestions(id){
@@ -314,6 +314,7 @@ function iterateQuestions(id){
         selected = option4.value
         console.log(option4.value);
         if(selected == true){
+            console.log('resultcounter: ', result[counter].innerHTML);
             result[counter].innerHTML = '<i class="fa-solid fa-check"></i>';
             result[counter].style.backgroundColor = "#00cc99";
             result[counter].style.border = "#009973 solid";
@@ -338,7 +339,7 @@ function iterateQuestions(id){
         iterateQuestions(id);
         console.log(id);
     }
-    if (result = [0] || result < 10){
+    if (result === counter || result < 10){
         counter++
         iterateQuestions(id);
         console.log(result);
@@ -355,7 +356,7 @@ if (start){
  * value from username input-element and result from number of selected === true
  * displays on result.html id 'score-list'
  */
-/**let gameOver = 
+/**let score = result[10]
 
 function score(counter, id.length){
     var score = `${(counter/ id.length) * 100}% //calculate score in percentage
