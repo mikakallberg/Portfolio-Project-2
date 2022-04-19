@@ -87,7 +87,7 @@ h1, h2{
 #question-area{
     background-color: #d7baad;
     width: 75%;
-    height: 200px;
+    height: fit-content;
     padding: 1%;
     margin: 2% 10%;
 }
@@ -103,8 +103,8 @@ h1, h2{
     background-color: #d7baad;
     float: left;
     padding: 50px;
-    height: fit-content;
     width: 35%;
+    /*height: 10%;*/
 }
 
 #option-two{
@@ -112,8 +112,8 @@ h1, h2{
     clear: both;
     float: right;
     padding: 50px;
-    height: fit-content;
     width: 35%;
+    /*height: 10%;*/
     margin-top: -125px;
 }
 
@@ -122,9 +122,9 @@ h1, h2{
     clear: both;
     float: left;
     padding: 50px;
-    height: fit-content;
     width: 35%;
-    margin-top: 150px;
+    /*height: 10%;*/
+    margin-top: 75px;
     
 }
 
@@ -133,9 +133,14 @@ h1, h2{
     clear: both;
     float: right;
     padding: 50px;
-    height: fit-content;
     width: 35%;
-    margin-top: -125px;
+    /*height: 10%;*/
+    margin-top: -150px;
+}
+
+.navigation{
+    padding: 50px;
+    margin-top: 2%;
 }
 
 .score-area{
@@ -211,24 +216,31 @@ h2 {
 }
 #option-one{
     float: none;
+    padding: 32%;
 }
 #option-two{
     clear: none;
     float: none;
+    padding: 32%;
     margin-top: 1%;
 
 }
 #option-three{
     clear: none;
     float: none;
+    padding: 32%;
     margin-top: 1%;
 }
 #option-four{
     clear: none;
     float: none;
+    padding: 32%;
     margin-top: 1%;
 }
 
+.navigation{
+    margin-top: 950px;
+}
 .score-area{
     clear: none;
     margin-top: 1%;
@@ -244,17 +256,45 @@ h2 {
 
     #start-btn{
         padding: 40px;
+    }h2 {
+        margin-top: 20px;
+    }
+
+    /*quiz page*/
+    #question-area{
+        height: 75px;
+        padding: 1%;
+        margin: 2% 10%;
+    }
+    
+    .navigation{
+        margin-top: 900px;
+    }
+    .score-area{
+        clear: both;
+        margin-top: 1%;
+    }
+    h3{
+        font-size: 75%;
+    }
+    
+    #ten-btn{
+        padding: 1% 1.5%;
     }
 
     /*For Galaxy fold size screens 300px and down*/
     @media screen and (max-width: 300px){
+        /*Index page*/
         #start-btn{
             padding: none;
             font-size: 16px;
         }
-        h2 {
-            margin-top: 20px;
+       
+
+        .navigation{
+            margin-top: 700px;
         }
+    
     }
     
 }
