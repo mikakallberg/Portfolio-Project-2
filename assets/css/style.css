@@ -205,6 +205,10 @@ h3{
 #start-btn{
     padding: 50px;
 }
+
+h2 {
+    margin-top: 50px;
+}
 #option-one{
     float: none;
 }
@@ -240,6 +244,17 @@ h3{
 
     #start-btn{
         padding: 40px;
+    }
+
+    /*For Galaxy fold size screens 300px and down*/
+    @media screen and (max-width: 300px){
+        #start-btn{
+            padding: none;
+            font-size: 16px;
+        }
+        h2 {
+            margin-top: 20px;
+        }
     }
     
 }
