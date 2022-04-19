@@ -212,10 +212,7 @@ const myQuestions = [
      },
     
    
-];
-
-const result = Array.from(document.getElementsByClassName('score-btn')); 
-//Could this be a bug results doesn't turn up anywhere else, result does, but it doesn't fix the problem with coloring score-btn 
+]; 
 
 let start = true;
 var counter = 0;
@@ -257,7 +254,7 @@ function iterateQuestions(id){
         option2.style.backgroundColor = '#d7baad';
         option3.style.backgroundColor = '#d7baad';
         option4.style.backgroundColor = '#d7baad';
-        selected = option1.value
+        selected = option1.value;
         console.log(option1.value);
         if(selected == true){
             result[counter].innerHTML = '<i class="fa-solid fa-check"></i>';
@@ -268,14 +265,14 @@ function iterateQuestions(id){
             result[counter].style.backgroundColor = "#ff6666";
             result[counter].style.border = "#cc0000 solid";
         }
-    })
+    });
     //Give response to selection for option2
     option2.addEventListener('click', () => {
         option1.style.backgroundColor = '#d7baad';
         option2.style.backgroundColor = '#527c88';
         option3.style.backgroundColor = '#d7baad';
         option4.style.backgroundColor = '#d7baad';
-        selected = option2.value
+        selected = option2.value;
         console.log(option2.value);
         if(selected == true){
             result[counter].innerHTML = '<i class="fa-solid fa-check"></i>';
@@ -286,14 +283,14 @@ function iterateQuestions(id){
             result[counter].style.backgroundColor = "#ff6666";
             result[counter].style.border = "#cc0000 solid";
         }
-    })
+    });
     //Give response to selection for option3
     option3.addEventListener('click', () => {
         option1.style.backgroundColor = '#d7baad';
         option2.style.backgroundColor = '#d7baad';
         option3.style.backgroundColor = '#527c88';
         option4.style.backgroundColor = '#d7baad';
-        selected = option3.value
+        selected = option3.value;
         console.log(option3.value);
         if(selected == true){
             result[counter].innerHTML = '<i class="fa-solid fa-check"></i>';
@@ -304,14 +301,14 @@ function iterateQuestions(id){
             result[counter].style.backgroundColor = "#ff6666";
             result[counter].style.border = "#cc0000 solid";
         }
-    })
+    });
     //Give response to selection for option4
     option4.addEventListener('click', () => {
         option1.style.backgroundColor = '#d7baad';
         option2.style.backgroundColor = '#d7baad';
         option3.style.backgroundColor = '#d7baad';
         option4.style.backgroundColor = '#527c88';
-        selected = option4.value
+        selected = option4.value;
         console.log(option4.value);
         if(selected == true){
             console.log('resultcounter: ', result[counter].innerHTML);
@@ -323,7 +320,7 @@ function iterateQuestions(id){
             result[counter].style.backgroundColor = "#ff6666";
             result[counter].style.border = "#cc0000 solid";
         }
-    })
+    });
 
     const next = document.getElementsByClassName('next')[0];
     /**var id = 0;*/
@@ -340,11 +337,11 @@ function iterateQuestions(id){
         console.log(id);
     }
     if (result === counter || result < 10){
-        counter++
+        counter++;
         iterateQuestions(id);
         console.log(result);
-    };
-    })
+    }
+    });
 }
 
 if (start){
@@ -393,7 +390,7 @@ if (start){
         option2.style.backgroundColor = '#d7baad';
         option3.style.backgroundColor = '#d7baad';
         option4.style.backgroundColor = '#d7baad';
-        selected = option1.value
+        selected = option1.value;
         console.log(option1.value);
         if(selected == true){
             result[counter].innerHTML = '<i class="fa-solid fa-check"></i>';
@@ -404,14 +401,14 @@ if (start){
             result[counter].style.backgroundColor = "#ff6666";
             result[counter].style.border = "#cc0000 solid";
         }
-    })
+    });
     //Give response to selection for option2
     option2.addEventListener('click', () => {
         option1.style.backgroundColor = '#d7baad';
         option2.style.backgroundColor = '#527c88';
         option3.style.backgroundColor = '#d7baad';
         option4.style.backgroundColor = '#d7baad';
-        selected = option2.value
+        selected = option2.value;
         console.log(option2.value);
         if(selected == true){
             result[counter].innerHTML = '<i class="fa-solid fa-check"></i>';
@@ -422,14 +419,14 @@ if (start){
             result[counter].style.backgroundColor = "#ff6666";
             result[counter].style.border = "#cc0000 solid";
         }
-    })
+    });
     //Give response to selection for option3
     option3.addEventListener('click', () => {
         option1.style.backgroundColor = '#d7baad';
         option2.style.backgroundColor = '#d7baad';
         option3.style.backgroundColor = '#527c88';
         option4.style.backgroundColor = '#d7baad';
-        selected = option3.value
+        selected = option3.value;
         console.log(option3.value);
         if(selected == true){
             result[counter].innerHTML = '<i class="fa-solid fa-check"></i>';
@@ -440,14 +437,14 @@ if (start){
             result[counter].style.backgroundColor = "#ff6666";
             result[counter].style.border = "#cc0000 solid";
         }
-    })
+    });
     //Give response to selection for option4
     option4.addEventListener('click', () => {
         option1.style.backgroundColor = '#d7baad';
         option2.style.backgroundColor = '#d7baad';
         option3.style.backgroundColor = '#d7baad';
         option4.style.backgroundColor = '#527c88';
-        selected = option4.value
+        selected = option4.value;
         console.log(option4.value);
         if(selected == true){
             console.log('resultcounter: ', result[counter].innerHTML);
@@ -459,12 +456,11 @@ if (start){
             result[counter].style.backgroundColor = "#ff6666";
             result[counter].style.border = "#cc0000 solid";
         }
-    })
+    });
 }
 
    function score (){
-   let result = document.getElementsByClassName('score-btn');
-    console.log(result);
+   const next = document.getElementsByClassName('next')[0];
     /**var id = 0;
 
     next.addEventListener('click', () => {
@@ -479,12 +475,12 @@ if (start){
         console.log(id);
     }
     if (result === counter || result < 10){
-        counter++
+        counter++;
         iterateQuestions(id);
         console.log(result);
-    };
-    })
-} 
+    }
+    });
+}
 
 if (start){
     iterateQuestions('0');}*/ 
