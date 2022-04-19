@@ -333,7 +333,7 @@ function iterateQuestions(id){
         option3.style.backgroundColor = '#d7baad';
         option4.style.backgroundColor = '#d7baad';
         start = false;
-    if (id < 2){
+    if (id < 10){
         id++;
         iterateQuestions(id);
         console.log(id);
