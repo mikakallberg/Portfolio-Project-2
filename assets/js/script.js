@@ -46,13 +46,16 @@ const myQuestions = [
    
 ];
 
+const results = Array.from(document.getElementsByClassName('score-btn'));
+
 let start = true;
+let counter = 0;
 
 
-function iterateQuestions (id){
+function iterateQuestions(id){
     //get result
     let result = document.getElementsByClassName('score-btn');
-    result[0].innertext = '';
+    console.log(result);
 
     //Get the area where questions are to be displayed
     const question = document.getElementById('question-area');
@@ -89,13 +92,13 @@ function iterateQuestions (id){
         selected = option1.value
         console.log(option1.value);
         if(selected == true){
-            result[0].innerHTML = '<i class="fa-solid fa-check"></i>';
-            result[0].style.backgroundColor = "#00cc99";
-            result[0].style.border = "#009973 solid";
+            result[counter].innerHTML = '<i class="fa-solid fa-check"></i>';
+            result[counter].style.backgroundColor = "#00cc99";
+            result[counter].style.border = "#009973 solid";
         }else{
-            result[0].innerHTML = '<i class="fa-solid fa-x"></i>';
-            result[0].style.backgroundColor = "#ff6666";
-            result[0].style.border = "#cc0000 solid";
+            result[counter].innerHTML = '<i class="fa-solid fa-x"></i>';
+            result[counter].style.backgroundColor = "#ff6666";
+            result[counter].style.border = "#cc0000 solid";
         }
     })
     //Give response to selection for option2
@@ -107,13 +110,13 @@ function iterateQuestions (id){
         selected = option2.value
         console.log(option2.value);
         if(selected == true){
-            result[0].innerHTML = '<i class="fa-solid fa-check"></i>';
-            result[0].style.backgroundColor = "#00cc99";
-            result[0].style.border = "#009973 solid";
+            result[counter].innerHTML = '<i class="fa-solid fa-check"></i>';
+            result[counter].style.backgroundColor = "#00cc99";
+            result[counter].style.border = "#009973 solid";
         }else{
-            result[0].innerHTML = '<i class="fa-solid fa-x"></i>';
-            result[0].style.backgroundColor = "#ff6666";
-            result[0].style.border = "#cc0000 solid";
+            result[counter].innerHTML = '<i class="fa-solid fa-x"></i>';
+            result[counter].style.backgroundColor = "#ff6666";
+            result[counter].style.border = "#cc0000 solid";
         }
     })
     //Give response to selection for option3
@@ -125,13 +128,13 @@ function iterateQuestions (id){
         selected = option3.value
         console.log(option3.value);
         if(selected == true){
-            result[0].innerHTML = '<i class="fa-solid fa-check"></i>';
-            result[0].style.backgroundColor = "#00cc99";
-            result[0].style.border = "#009973 solid";
+            result[counter].innerHTML = '<i class="fa-solid fa-check"></i>';
+            result[counter].style.backgroundColor = "#00cc99";
+            result[counter].style.border = "#009973 solid";
         }else{
-            result[0].innerHTML = '<i class="fa-solid fa-x"></i>';
-            result[0].style.backgroundColor = "#ff6666";
-            result[0].style.border = "#cc0000 solid";
+            result[counter].innerHTML = '<i class="fa-solid fa-x"></i>';
+            result[counter].style.backgroundColor = "#ff6666";
+            result[counter].style.border = "#cc0000 solid";
         }
     })
     //Give response to selection for option4
@@ -143,18 +146,18 @@ function iterateQuestions (id){
         selected = option4.value
         console.log(option4.value);
         if(selected == true){
-            result[0].innerHTML = '<i class="fa-solid fa-check"></i>';
-            result[0].style.backgroundColor = "#00cc99";
-            result[0].style.border = "#009973 solid";
+            result[counter].innerHTML = '<i class="fa-solid fa-check"></i>';
+            result[counter].style.backgroundColor = "#00cc99";
+            result[counter].style.border = "#009973 solid";
         }else{
-            result[0].innerHTML = '<i class="fa-solid fa-x"></i>';
-            result[0].style.backgroundColor = "#ff6666";
-            result[0].style.border = "#cc0000 solid";
+            result[counter].innerHTML = '<i class="fa-solid fa-x"></i>';
+            result[counter].style.backgroundColor = "#ff6666";
+            result[counter].style.border = "#cc0000 solid";
         }
     })
 
     const next = document.getElementsByClassName('next')[0];
-    var id = 0;
+    /**var id = 0;*/
 
     next.addEventListener('click', () => {
         option1.style.backgroundColor = '#d7baad';
@@ -162,12 +165,13 @@ function iterateQuestions (id){
         option3.style.backgroundColor = '#d7baad';
         option4.style.backgroundColor = '#d7baad';
         start = false;
-    if (id < 2) {
+    if (id < 2){
         id++;
         iterateQuestions(id);
         console.log(id);
     }
-    if ( result = [0], result < 2, result++){
+    if (result = [counter] || result < 10){
+        counter++
         iterateQuestions(id);
         console.log(result);
     };
@@ -177,22 +181,6 @@ function iterateQuestions (id){
 if (start){
     iterateQuestions('0');
 }
-
-//JS for next button and method
-/**const next = document.getElementsByClassName('next')[0];
-var id = 0;*/
-
-/**next.addEventListener('click', () => {
-    start = false;
-    if (id < 2) {
-        id++;
-        iterateQuestions(id);
-        console.log(id);
-    }
-})*/
-//emptying box when refresh
-/**document.getElementsByClassName("options").style.backgroundColor = "";*/
-
 
 /** 
 function startQuiz(){
