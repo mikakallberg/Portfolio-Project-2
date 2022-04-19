@@ -348,13 +348,20 @@ function iterateQuestions(id){
 
 if (start){
     iterateQuestions('0');
-}
+};
+
+/**gameOver function
+ * triggers username input-element
+ * value from username input-element and result from number of selected === true
+ * displays on result.html id 'score-list'
+ */
+/**let gameOver = 
+
+function score(counter, id.length){
+    var score = `${(counter/ id.length) * 100}% //calculate score in percentage
+};*/ //working on gameOver function
 
 /** 
-function startQuiz(){
-    let questions = Math.floor(Math.random() * myQuestions.length);
-    console.log("question:" , questions)
-}
 
 function calculateScore(){
 
