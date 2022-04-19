@@ -1,23 +1,4 @@
- /**
-     * emptying box when refresh
-     * document.getElementById("answer-box").value = "";
-     */
-  
-//Eventlistener that triggers the first question. Copied from Love-Maths runthrough
-/**document.addEventListener('DOMContentLoaded', function(){
-    let options = document.getElementsByClassName('options');
 
-    for ( let option of options){
-        option.addEventListener('click', function() {
-            if (this.getAttribute('class') === 'options'){
-                alert('You clicked an option!');
-            }else {
-                let options = this.getAttribute('class');
-                alert(`You clicked an ${options}`);
-            }
-        })
-    }
-})*/
 
 const myQuestions = [
     {
@@ -67,6 +48,7 @@ const myQuestions = [
 
 let start = true;
 
+
 function iterateQuestions (id){
     //get result
     let result = document.getElementsByClassName('score-btn');
@@ -96,14 +78,14 @@ function iterateQuestions (id){
     option3.value = myQuestions[id].answers[2].isCorrect;
     option4.value = myQuestions[id].answers[3].isCorrect;
 
-    var selected = "";
+    var selected = '';
 
     //Give response to selection for option1
     option1.addEventListener('click', () => {
-        option1.style.backgroundColor = 'lightblue';
-        option2.style.backgroundColor = 'yellow';
-        option3.style.backgroundColor = 'yellow';
-        option4.style.backgroundColor = 'yellow';
+        option1.style.backgroundColor = '#527c88';
+        option2.style.backgroundColor = '#d7baad';
+        option3.style.backgroundColor = '#d7baad';
+        option4.style.backgroundColor = '#d7baad';
         selected = option1.value
         console.log(option1.value);
         if(selected == true){
@@ -118,10 +100,10 @@ function iterateQuestions (id){
     })
     //Give response to selection for option2
     option2.addEventListener('click', () => {
-        option1.style.backgroundColor = 'yellow';
-        option2.style.backgroundColor = 'lightblue';
-        option3.style.backgroundColor = 'yellow';
-        option4.style.backgroundColor = 'yellow';
+        option1.style.backgroundColor = '#d7baad';
+        option2.style.backgroundColor = '#527c88';
+        option3.style.backgroundColor = '#d7baad';
+        option4.style.backgroundColor = '#d7baad';
         selected = option2.value
         console.log(option2.value);
         if(selected == true){
@@ -136,10 +118,10 @@ function iterateQuestions (id){
     })
     //Give response to selection for option3
     option3.addEventListener('click', () => {
-        option1.style.backgroundColor = 'yellow';
-        option2.style.backgroundColor = 'yellow';
-        option3.style.backgroundColor = 'lightblue';
-        option4.style.backgroundColor = 'yellow';
+        option1.style.backgroundColor = '#d7baad';
+        option2.style.backgroundColor = '#d7baad';
+        option3.style.backgroundColor = '#527c88';
+        option4.style.backgroundColor = '#d7baad';
         selected = option3.value
         console.log(option3.value);
         if(selected == true){
@@ -154,10 +136,10 @@ function iterateQuestions (id){
     })
     //Give response to selection for option4
     option4.addEventListener('click', () => {
-        option1.style.backgroundColor = 'yellow';
-        option2.style.backgroundColor = 'yellow';
-        option3.style.backgroundColor = 'yellow';
-        option4.style.backgroundColor = 'lightblue';
+        option1.style.backgroundColor = '#d7baad';
+        option2.style.backgroundColor = '#d7baad';
+        option3.style.backgroundColor = '#d7baad';
+        option4.style.backgroundColor = '#527c88';
         selected = option4.value
         console.log(option4.value);
         if(selected == true){
@@ -171,22 +153,25 @@ function iterateQuestions (id){
         }
     })
 
-   /**  //Get the evaluate button from html
-    const evaluate = document.getElementsByClassName('evaluate');
+    const next = document.getElementsByClassName('next')[0];
+    var id = 0;
 
-    //Evaluation
-    evaluate[0].addEventListener('click', () => {
-        if(selected == true){
-            result[0].innerHTML = '<i class="fa-solid fa-check"></i>';
-            result[0].style.backgroundColor = "#00cc99";
-            result[0].style.border = "#009973 solid";
-        }else{
-            result[0].innerHTML = '<i class="fa-solid fa-x"></i>';
-            result[0].style.backgroundColor = "#ff6666";
-            result[0].style.border = "#cc0000 solid";
-        }
-    })*/
-
+    next.addEventListener('click', () => {
+        option1.style.backgroundColor = '#d7baad';
+        option2.style.backgroundColor = '#d7baad';
+        option3.style.backgroundColor = '#d7baad';
+        option4.style.backgroundColor = '#d7baad';
+        start = false;
+    if (id < 2) {
+        id++;
+        iterateQuestions(id);
+        console.log(id);
+    }
+    if ( result = [0], result < 2, result++){
+        iterateQuestions(id);
+        console.log(result);
+    };
+    })
 }
 
 if (start){
@@ -194,36 +179,25 @@ if (start){
 }
 
 //JS for next button and method
-const next = document.getElementsByClassName('next')[0];
-var id = 0;
+/**const next = document.getElementsByClassName('next')[0];
+var id = 0;*/
+
+/**next.addEventListener('click', () => {
+    start = false;
+    if (id < 2) {
+        id++;
+        iterateQuestions(id);
+        console.log(id);
+    }
+})*/
 //emptying box when refresh
-document.getElementById("answer-box").value = "";
+/**document.getElementsByClassName("options").style.backgroundColor = "";*/
 
 
 /** 
 function startQuiz(){
     let questions = Math.floor(Math.random() * myQuestions.length);
     console.log("question:" , questions)
-}
-
-function displayQuestion(){
-    
-}
-
-function displayOptions(){
-
-}
-
-function checkAnswer(){
-
-}
-
-function sendCorrect(){
-
-}
-
-function sendInCorrect(){
-
 }
 
 function calculateScore(){
