@@ -172,8 +172,8 @@ h3{
 
 
 /*Media Queries*/
-/* For small screens 700px and down*/
-@media screen and (max-width: 700px){
+/* For small screens 900px and down*/
+@media screen and (max-width: 900px){
 .heading{
     font-size: 2rem;
 }
@@ -185,36 +185,40 @@ h3{
 h2 {
     margin-top: 50px;
 }
+
 #option-one{
     float: none;
-    padding: 32%;
+    width: 75%;
+    margin-left: 5%;
 }
 #option-two{
     clear: none;
     float: none;
-    padding: 32%;
-    margin-top: 1%;
+    width: 75%;
+    margin-top: 10px;
 
 }
 #option-three{
     clear: none;
     float: none;
-    padding: 32%;
-    margin-top: 1%;
+    width: 75%;
+    margin-top: 10px;
+    margin-left: 5%;
 }
 #option-four{
     clear: none;
     float: none;
-    padding: 32%;
-    margin-top: 1%;
+    width: 75%;
+    margin-top: 10px;
 }
 
-.navigation{
-    margin-top: 950px;
-}
 .score-area{
     clear: none;
     margin-top: 1%;
+}
+
+h3{
+    margin: 0 5px;
 }
     
 }
