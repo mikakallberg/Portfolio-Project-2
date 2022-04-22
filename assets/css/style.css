@@ -95,17 +95,14 @@ h1, h2{
     float: left;
     padding: 50px;
     width: 35%;
-    /*height: 10%;*/
 }
 
 #option-two{
     background-color: #d7baad;
     clear: both;
-    float: right;
     padding: 50px;
     width: 35%;
-    /*height: 10%;*/
-    margin-top: -125px;
+    display: inline-block;
 }
 
 #option-three{
@@ -114,7 +111,6 @@ h1, h2{
     float: left;
     padding: 50px;
     width: 35%;
-    /*height: 10%;*/
     margin-top: 75px;
     
 }
@@ -122,11 +118,10 @@ h1, h2{
 #option-four{
     background-color: #d7baad;
     clear: both;
-    float: right;
     padding: 50px;
     width: 35%;
-    /*height: 10%;*/
-    margin-top: -150px;
+    margin-top: 75px;
+    display: inline-block;
 }
 
 .navigation{
@@ -139,7 +134,7 @@ h1, h2{
     background-color: #d7baad;
     height: fit-content;
     width: 75%;
-    padding: 1%;
+    padding: 2%;
     margin-left: 10%;
     margin-top: 2%;
 }
@@ -148,12 +143,14 @@ h1, h2{
     padding: 2% 0;
     height: fit-content;
     margin-top: 15px;
+    display: inline;
 }
 
 #score-line-2{
     padding: 2% 0;
     height: fit-content;
     margin-top: 15px;
+    display: inline;
 }
 
 
@@ -162,16 +159,15 @@ h3{
     list-style-type: none;
     text-decoration: none;
     font-size: 150%;
-    width: 2%;
-    padding: 1% 2%;
+    padding: 5px 15px;
     border: 2px solid #253741;
     background-color: #527c88;
     border-radius: 50%;
-    margin: 0 3%;
+    margin: 0 15px
 }
 
 #ten-btn{
-    padding: 1% 1.5%;
+    padding: 5px 12px;
 }
 
 /*Result page*/
