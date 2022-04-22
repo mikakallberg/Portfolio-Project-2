@@ -124,11 +124,6 @@ h1, h2{
     display: inline-block;
 }
 
-.navigation{
-    padding: 50px;
-    margin-top: 2%;
-}
-
 .score-area{
     clear: both;
     background-color: #d7baad;
@@ -231,7 +226,7 @@ h2 {
 
 .score-area{
     clear: none;
-    margin-top: 3%;
+    margin-top: 20vh;
 }
 
 #score-line-1{
@@ -273,7 +268,7 @@ h3{
     
     .score-area{
         clear: both;
-        margin-top: 15vh;
+        margin-top: 25vh;
     }
     
     h3{
@@ -299,7 +294,7 @@ h3{
         }
 
         .score-area{
-            margin-top: 20vh;
+            margin-top: 30vh;
         } 
         h3{
             padding: 5px 10px;
@@ -309,10 +304,10 @@ h3{
         }
     
     }
-    /*For Galaxy fold and iPhone SE size screens 380px and down*/
-    @media screen  and (max-width: 380px){
+    /*For iPhone SE size screens 410px and down*/
+    @media screen  and (max-width: 410px){
         .score-area{
-            margin-top: 25vh;
+            margin-top: 40vh;
         }
         
     }
