@@ -173,8 +173,9 @@ h3{
 
 /*Media Queries*/
 
-/*For medium to small screens 1150px and down*/
+/*For medium screens 1150px and down*/
 @media screen and (max-width: 1150px){
+    /*Quiz page*/
     .score-area{
         clear: none;
         margin-top: 1%;
@@ -185,8 +186,9 @@ h3{
     }
     
 }
-/* For small screens 1000px and down*/
+/* For smaller screens 1000px and down*/
 @media screen and (max-width: 1000px){
+    /*Index page*/
 .heading{
     font-size: 2rem;
 }
@@ -199,6 +201,7 @@ h2 {
     margin-top: 50px;
 }
 
+/*Quiz page*/
 #option-one{
     float: none;
     width: 75%;
@@ -228,11 +231,19 @@ h2 {
 
 .score-area{
     clear: none;
-    margin-top: 1%;
+    margin-top: 3%;
 }
 
-#score-line-one{
-    padding: 1% 0 5% 0;
+#score-line-1{
+    padding: 2% 0 5%;
+    margin-top: none;
+    display: inline-block;
+    width: 100%;
+}
+
+#score-line-2{
+    display: inline-block;
+    width: 100%;
 }
 
 h3{
@@ -241,8 +252,8 @@ h3{
     
 }
 
-/*For very small screens 400px and down*/
-@media screen and (max-width: 400px){
+/*For smaller screens 700px and down*/
+@media screen and (max-width: 700px){
     .heading{
         font-size: 1.5rem;
     }
@@ -260,34 +271,50 @@ h3{
         margin: 2% 10%;
     }
     
-    .navigation{
-        margin-top: 900px;
-    }
     .score-area{
         clear: both;
-        margin-top: 1%;
+        margin-top: 15vh;
     }
+    
     h3{
-        font-size: 75%;
+        font-size: 100%;
+        padding: 10px 20px;
     }
     
     #ten-btn{
-        padding: 1% 1.5%;
+        padding: 10px 20px;
     }
 
-    /*For Galaxy fold size screens 300px and down*/
-    @media screen and (max-width: 300px){
+    /*For very small screens 480px and down*/
+    @media screen and (max-width: 480px){
         /*Index page*/
         #start-btn{
             padding: none;
             font-size: 16px;
         }
-       
+        /*Quiz page*/
 
-        .navigation{
-            margin-top: 700px;
+        #option-area{
+            width: 65%;
+        }
+
+        .score-area{
+            margin-top: 20vh;
+        } 
+        h3{
+            padding: 5px 10px;
+        }
+        #ten-btn{
+            padding: 5px 10px;
         }
     
+    }
+    /*For Galaxy fold and iPhone SE size screens 380px and down*/
+    @media screen  and (max-width: 380px){
+        .score-area{
+            margin-top: 25vh;
+        }
+        
     }
     
 }
