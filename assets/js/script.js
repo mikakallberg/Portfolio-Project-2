@@ -243,10 +243,20 @@ function renderQuestion (index){
     const question = myQuestions[index];
     const questionEl = document.getElementById('question-area');
 
+    //This part connects to the loop underneath where each of the IDs gets a option from answers in myQuestion the JSON stringify div activates this part. Right now it's not activated.
     const option1 = document.getElementById('option-one');
     const option2 = document.getElementById('option-two');
     const option3 = document.getElementById('option-three');
     const option4 = document.getElementById('option-four');
+
+    //questionEl from score function and declared in const above connects to questionArea in this function
+    questionEl.innerText = question.questionArea;
+
+    //Loop that takes the user through each option and places them in their div
+    question.answers.forEach((x, i) => {
+        optionArea.innerHTML += `<div onclick='handleCheck(${JSON.stringify(index)}, ${JSON.stringify(x)})' class="options" id='option-${i + 1}'><p>${x.text}</p></div>`
+    })
+
 };
 
 
