@@ -220,6 +220,45 @@ let start = true;
 let score = 0;
 var counter = 0;
 
+//Variable to connect the question and the score
+const questionEl = document.getElementById('#score-line-1');
+//Function that gives an array of possible scores
+const myScores = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+/*Since the scorecard is going to trigger the next question in the questionflow
+This function renders the scorecard and moves the score along myScores array, which also gives a basis to trigger a new qestion from the myQuestion array*/
+function renderScores (){
+    myScores.forEach (question => {
+        questionEl.innerHTML += `<h3 class= "score-btn" id = ${question}>${question + 1}</h3>`
+    })
+};
+
+renderScores();
+
+//pulls id of option area where the possible answers to the questions displayed
+const optionArea = document.getElementById('option-area');
+
+//This function will bring out a question from the array index myQuestion, connect question to Question area and answers to option area.
+function renderQuestion (index){
+    const question = myQuestions[index];
+    const questionEl = document.getElementById('question-area');
+
+    const option1 = document.getElementById('option-one');
+    const option2 = document.getElementById('option-two');
+    const option3 = document.getElementById('option-three');
+    const option4 = document.getElementById('option-four');
+};
+
+
+
+
+
+
+
+
+
+
+
 //Where is iterateQuestions declared?
 function iterateQuestions(id){
     //get result
