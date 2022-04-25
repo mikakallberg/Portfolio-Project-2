@@ -235,7 +235,7 @@ function renderScores (){
 
 renderScores();
 
-//pulls id of option area where the possible answers to the questions displayed
+//pulls id of option area where the possible answers to the questions displayed, global plane.
 const optionArea = document.getElementById('option-area');
 
 //This function will bring out a question from the array index myQuestion, connect question to Question area and answers to option area.
@@ -260,6 +260,12 @@ function renderQuestion (index){
 };
 
 //After each question this function cleares the board for a new question
+function clearQuestion(){
+    const questionEl = document.getElementById('question-area');
+    questionEl.innerText = "";
+    optionArea.innerHTML = "";
+};
+
 
 
 
