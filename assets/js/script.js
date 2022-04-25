@@ -218,36 +218,44 @@ const myQuestions = [
 let start = true;
 //Score variable and counter variable, they both start at zero.
 let score = 0;
+console.log(score);
 var counter = 0;
+console.log(score);
 
 //Variable to connect the question and the score
 const questionEl = document.getElementById('#score-line-1');
 //Function that gives an array of possible scores
 const myScores = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(myScores);
 
 /*Since the scorecard is going to trigger the next question in the questionflow
 This function renders the scorecard and moves the score along myScores array, which also gives a basis to trigger a new qestion from the myQuestion array*/
 function renderScores (){
-    myScores.forEach (question => {
-        questionEl.innerHTML += `<h3 class= "score-btn" id = ${question}>${question + 1}</h3>`
+    myScores.forEach(question => {
+        questionEl.innerHTML += `<h3 class= "score-btn" id ='${question}'>${question + 1}</h3>`
     })
+    console.log(myScores);
 };
 
 renderScores();
+console.log(renderScores);
 
 //pulls id of option area where the possible answers to the questions displayed, global plane.
 const optionArea = document.getElementById('option-area');
+console.log(optionArea);
 
 //This function will bring out a question from the array index myQuestion, connect question to Question area and answers to option area.
 function renderQuestion (index){
     const question = myQuestions[index];
     const questionEl = document.getElementById('question-area');
+    console.log(question);
 
     //This part connects to the loop underneath where each of the IDs gets a option from answers in myQuestion the JSON stringify div activates this part. Right now it's not activated.
     const option1 = document.getElementById('option-one');
     const option2 = document.getElementById('option-two');
     const option3 = document.getElementById('option-three');
     const option4 = document.getElementById('option-four');
+    console.log(option1);
 
     //questionEl from score function and declared in const above connects to questionArea in this function
     questionEl.innerText = question.questionArea;
@@ -265,6 +273,9 @@ function clearQuestion(){
     questionEl.innerText = "";
     optionArea.innerHTML = "";
 };
+console.log(clearQuestion);
+
+
 
 
 
