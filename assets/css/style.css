@@ -161,7 +161,7 @@ h3{
     margin: 0 15px
 }
 
-#ten-btn{
+#scorebtn10{
     padding: 5px 12px;
 }
 
@@ -242,7 +242,7 @@ h2 {
 }
 
 h3{
-    margin: 0 5px;
+    margin: 0 20px;
 }
     
 }
@@ -276,7 +276,7 @@ h3{
         padding: 10px 20px;
     }
     
-    #ten-btn{
+    #scorebtn10{
         padding: 10px 20px;
     }
 
@@ -299,7 +299,7 @@ h3{
         h3{
             padding: 5px 10px;
         }
-        #ten-btn{
+        #scorebtn10{
             padding: 5px 10px;
         }
     
