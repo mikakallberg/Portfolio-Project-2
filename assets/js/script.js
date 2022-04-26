@@ -259,3 +259,5 @@ const renderQuestions = (index) => {
     option4.innerText = myQuestions[index].answers[3].text;
 
 };
+
+renderQuestions(0);
