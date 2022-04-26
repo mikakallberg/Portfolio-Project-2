@@ -1,4 +1,14 @@
 
+//All the elements affected by JavaScript
+const questionElement = document.getElementById('question-area');
+console.log(questionElement);
+const option1 = document.getElementById('option-one');
+const option2 = document.getElementById('option-two');
+const option3 = document.getElementById('option-three');
+const option4 = document.getElementById('option-four');
+console.log(option4);
+const scores = document.getElementsByClassName('scores');
+
 //Questions for the game, different properties (id) are connected to different numbers, which are connected to questions, answers and a boolean that states if the string is correct or not.
 const myQuestions = [
     {
@@ -234,3 +244,18 @@ const myQuestions = [
     
     ]; 
 
+
+    let start = true;
+
+//This function connects element in HTML with object in myQuestion array and renders them to browser
+const renderQuestions = (index) => {
+    console.log('rendering');
+    questionElement.innerText = myQuestions[index].questionArea;
+
+    //Looping through all the answer options
+    option1.innerText = myQuestions[index].answers[0].text;
+    option2.innerText = myQuestions[index].answers[1].text;
+    option3.innerText = myQuestions[index].answers[2].text;
+    option4.innerText = myQuestions[index].answers[3].text;
+
+};
