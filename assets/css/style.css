@@ -261,7 +261,7 @@ h3{
 
     /*quiz page*/
     #question-area{
-        height: 75px;
+        height: 35px;
         padding: 1%;
         margin: 2% 10%;
     }
@@ -274,6 +274,7 @@ h3{
     h3{
         font-size: 100%;
         padding: 10px 20px;
+        margin: 0 9px;
     }
     
     #scorebtn10{
@@ -289,11 +290,34 @@ h3{
         }
         /*Quiz page*/
 
+        .heading{
+            width: 100%;
+            margin-left: 0;
+        }
+        #question-area{
+            height: 52px;
+        }
+
         #option-area{
             width: 65%;
+            margin-left: 13%;
+        }
+        #option-1{
+            padding: 40px;
+        }
+        #option-2{
+            padding: 40px;
+        }
+        #option-3{
+            padding: 40px;
+        }
+        #option-4{
+            padding: 40px;
         }
 
         .score-area{
+            width: 90%;
+            margin-left: 5%;
             margin-top: 30vh;
         } 
         h3{
@@ -304,11 +328,41 @@ h3{
         }
     
     }
-    /*For iPhone SE size screens 410px and down*/
-    @media screen  and (max-width: 410px){
-        .score-area{
-            margin-top: 40vh;
+    /*For iPhone SE size screens 413px and down*/
+    @media screen  and (max-width: 413px){
+        #option-area{
+            width: 63%;
+            margin-left: 9%;
         }
+        #option-1{
+            padding: 15px;
+            margin-left: 16%;
+        }
+        #option-2{
+            padding: 15px;
+            margin-left: 16%;
+        }
+        #option-3{
+            padding: 15px;
+            margin-left: 16%;
+        }
+        #option-4{
+            padding: 15px;
+            margin-left: 16%;
+        }
+        .score-area{
+            margin-top: 15vh;
+        } 
+        
+    }
+    /*For Samsung Galaxy fold size screens 300px and down*/
+    @media screen  and (max-width: 300px){
+        
+        .score-area{
+            margin-top: 39vh;
+            width: 100%;
+            margin-left: 0;
+        } 
         
     }
     
