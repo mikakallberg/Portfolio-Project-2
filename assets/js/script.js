@@ -369,4 +369,3 @@ if (questionIndex <= 4) {
     }
 }
 }
-
