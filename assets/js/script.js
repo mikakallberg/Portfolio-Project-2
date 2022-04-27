@@ -279,6 +279,7 @@ function renderQuestions(index) {
     });
     console.log('question.answers');
 };
+console.log('It ends here');
 
 //Function to clear all the question and option elements between the loops
 function clearQuestions() {
@@ -287,6 +288,7 @@ function clearQuestions() {
     questionEl.innerText = "";
     optionArea.innerHTML = "";
 };
+console.log('or it ends here');
 
 /*Function that goes in to effect at the end of question 10
  *it renders a pulls on the clearQuestions function and clears the board
@@ -303,11 +305,17 @@ function scoreTotal() {
     } else {
         questionEl.innerHTML = `<p>Well hello there colleague! You scored ${score} out of 10, are you sure you are not a helathcare worker</p>`
     }
-
+    console.log('where does it end?');
 };
+console.log('does it end here?');
 
 //Declaring questionIndex beginning at 0
-let questionIndex = 0;
+let questionIndex = 0;{
+    if (questionIndex < 10) {
+        renderQuestions(questionIndex);
+    }
+    console.log('if statement');
+};
 
 /*Function that loops through the scorecard and updates the
  *HTML elements with a fontawesome symbol and a change of colordesign
@@ -361,6 +369,3 @@ function handleCheck(index, x) {
         }
     }
 }
-if (questionIndex < 10) {
-    renderQuestions(questionIndex);
-};
