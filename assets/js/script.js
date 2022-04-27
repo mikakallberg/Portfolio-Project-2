@@ -289,8 +289,8 @@ let start = true;
         questionEl.innerText = question.questionArea
 
         question.answers.forEach((x, i) => {
-            optionArea.innerHTML += 
-            `<div onclick='handleCheck(${JSON,stringify(index)}, ${JSON.stringify})' 
+            optionArea.innerHTML += `
+            <div onclick='handleCheck(${JSON.stringify(index)}, ${JSON.stringify})' 
             class="options" id='option-${i + 1}'>
             <p>${x.text}</p>
             </div>`
