@@ -225,14 +225,14 @@ console.log(score);
 console.log(counter);
 
 //The trigger to run the next question goes through the score-area
-const questionElementOne = document.querySelector("#score-line-1");
-const questionElementTwo = document.querySelector("#score-line-2");
+const questionElementOne = document.querySelector("#score-line-1")
+const questionElementTwo = document.querySelector("#score-line-2")
 console.log(questionElementOne, 'questionElement');
 /*Array element that connects to the question declaration 
  *array in myQuestions and if statements
  */
-const myScoresOne = [0, 1, 2, 3, 4];
-const myScoresTwo = [5, 6, 7, 8, 9];
+const myScoresOne = [0, 1, 2, 3, 4]
+const myScoresTwo = [5, 6, 7, 8, 9]
 console.log(myScoresTwo);
 
 //This function renders the scorecard with it's HTML elements
@@ -267,7 +267,7 @@ function renderQuestions(index) {
     const option2 = document.getElementById('option-two');
     const option3 = document.getElementById('option-three');
     const option4 = document.getElementById('option-four');
-    console.log('question', question);
+    console.log('question');
     questionEl.innerText = question.questionArea
 
     question.answers.forEach((x, i) => {
@@ -282,7 +282,8 @@ function renderQuestions(index) {
 
 //Function to clear all the question and option elements between the loops
 function clearQuestions() {
-    const questionEl = document.getElementById("question-area");
+    console.log('clearQuestions');
+    const questionEl = document.getElementById('question-area');
     questionEl.innerText = "";
     optionArea.innerHTML = "";
 };
@@ -294,7 +295,7 @@ function clearQuestions() {
 function scoreTotal() {
     console.log('scoreTotal');
     clearQuestions();
-    const questionEl = document.getElementById("question-area");
+    const questionEl = document.getElementById('question-area');
     if (score <= 4) {
         questionEl.innerHTML = `<p>Well done you scored ${score} out of 10</p>`
     } else if (score >= 5 && score <= 7) {
