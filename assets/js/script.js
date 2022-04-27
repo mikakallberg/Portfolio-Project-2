@@ -1,7 +1,10 @@
-
-//Questions for the game, different properties (id) are connected to different numbers, which are connected to questions, answers and a boolean that states if the string is correct or not.
+/*Questions for the game, different properties (id) are connected 
+*to different numbers, which are connected to questions, answers 
+*and a boolean that states if the string is correct or not.
+*/
 const myQuestions = [
     {
+        id: 0,
         questionArea: 
             'Which option contains only organelles?',
         answers: [
@@ -233,10 +236,68 @@ const myQuestions = [
     
     ]; 
 
-
+//The user initiates the game through clicking a text with a link in index.html
+//So the quiz starts automatically from quizz.html
     let start = true;
-    let question = 0;
+    let score = 0;
+    var counter = 0;
+    console.log(start);
+    console.log(score);
+    console.log(counter);
 
+    //The trigger to run the next question goes through the score-area
+    const questionElementOne = document.querySelector("score-line-1");
+    const questionElementTwo = document.querySelector("score-line-2");
+    console.log(questionElementOne, 'questionElement');
+    /*Array element that connects to the question declaration 
+    *array in myQuestions and if statements
+    */
+    const myScoresOne = [0, 1, 2, 3, 4];
+    const myScoresTwo = [5, 6, 7, 8, 9];
+    console.log(myScoresTwo);
+
+    //This function renders the scorecard with it's HTML elements
+    function renderScores (){
+        console.log('scores');
+        myScoresOne.forEach(question => {
+            questionElementOne.innerHTML += `<h3 class="score-btn" id=${question}>${question + 1}</h3>`
+        }),
+        myScoresTwo.forEach(question => {
+            questionElementTwo.innerHTML += `<h3 class="score-btn" id=${question}>${question + 1}</h3>`
+        })
+
+    };
+
+    //Calling function renderScores
+    renderScores();
+    console.log('Scores');
+    //Declaring the area where answers will be placed
+    const optionArea = document.querySelector("option-area");
+    console.log(optionArea, 'optionArea');
+    /*Function that renders options to optionArea and questions 
+    *to questionArea from myQuestions and loops through them all
+    */
+    function renderQuestions (index){
+        
+        const question = myQuestions[index];
+        const questionEl = document.getElementById("question-area");
+        const option1 = document.getElementById('option-one');
+        const option2 = document.getElementById('option-two');
+        const option3 = document.getElementById('option-three');
+        const option4 = document.getElementById('option-four');
+        console.log('question', question);
+        questionEl.innerText = question.questionArea
+
+        question.answers.forEach((x, i) => {
+            optionArea.innerHTML += 
+            `<div onclick='handleCheck(${JSON,stringify(index)}, ${JSON.stringify})' 
+            class="options" id='option-${i + 1}'>
+            <p>${x.text}</p>
+            </div>`
+        });
+        console.log('question.answers');
+    };
+    
 
 
 
