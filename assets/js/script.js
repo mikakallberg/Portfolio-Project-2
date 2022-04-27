@@ -238,7 +238,7 @@ const myQuestions = [
 
 //The user initiates the game through clicking a text with a link in index.html
 //So the quiz starts automatically from quizz.html
-    let start = true;
+let start = true;
     let score = 0;
     var counter = 0;
     console.log(start);
@@ -246,18 +246,18 @@ const myQuestions = [
     console.log(counter);
 
     //The trigger to run the next question goes through the score-area
-    const questionElementOne = document.querySelector("score-line-1");
-    const questionElementTwo = document.querySelector("score-line-2");
+    const questionElementOne = document.querySelector("#score-line-1")
+    const questionElementTwo = document.querySelector("#score-line-2")
     console.log(questionElementOne, 'questionElement');
     /*Array element that connects to the question declaration 
     *array in myQuestions and if statements
     */
-    const myScoresOne = [0, 1, 2, 3, 4];
-    const myScoresTwo = [5, 6, 7, 8, 9];
+    const myScoresOne = [0, 1, 2, 3, 4]
+    const myScoresTwo = [5, 6, 7, 8, 9]
     console.log(myScoresTwo);
 
     //This function renders the scorecard with it's HTML elements
-    function renderScores (){
+    function renderScores () {
         console.log('scores');
         myScoresOne.forEach(question => {
             questionElementOne.innerHTML += `<h3 class="score-btn" id=${question}>${question + 1}</h3>`
@@ -297,7 +297,41 @@ const myQuestions = [
         });
         console.log('question.answers');
     };
-    
+
+    //Function to clear all the question and option elements between the loops
+    function clearQuestions (){
+        const questionEl = document.getElementById("question-area");
+        questionEl.innerText = "";
+        optionArea.innerHTML = "";
+    };
+
+    /*Function that goes in to effect at the end of question 10
+    *it renders a pulls on the clearQuestions function and clears the board
+    *while rendering a score message with the users score and a message
+    */
+    function scoreTotal (){
+        console.log('scoreTotal');
+        clearQuestions();
+        const questionEl = document.getElementById("question-area");
+        if(score <= 4){
+            questionEl.innerHTML = `<p>Well done you scored ${score} out of 10</p>`
+        }else
+        if(score >= 5 && score <=7){
+            questionEl.innerHTML = `<p>Amazing you scored ${score} out of 10</p>`
+        }else{
+            questionEl.innerHTML = `<p>Well hello there colleague! You scored ${score} out of 10, are you sure you are not a helathcare worker</p>`
+        }
+        
+    };
+
+    //Declaring questionIndex beginning at 0
+    let questionIndex = 0;
+
+    /*Function that loops through the scorecard and updates the
+    *HTML elements with a fontawesome symbol and a change of colordesign
+    */
+    function handleCheck (index, x){};
+
 
 
 
