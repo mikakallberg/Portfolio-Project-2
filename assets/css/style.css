@@ -32,11 +32,11 @@ h1, h2{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; /*Code for shadown taken from https://getcssscan.com/css-box-shadow-examples*/
 }
 
-#start-btn, #score-list, #question-area, #option-one, #option-two, #option-three, #option-four, .highscore{
+#start-btn, #score-list, #question-area, #option-1, #option-2, #option-3, #option-4, .highscore{
     box-shadow: #5d8aa2 0px 3px 8px; /*Code for shadown taken from https://getcssscan.com/css-box-shadow-examples*/
 }
 
-#start-btn:hover, #option-one:hover, #option-two:hover, #option-three:hover, #option-four:hover{
+#start-btn:hover, #option-1:hover, #option-2:hover, #option-3:hover, #option-4:hover{
     box-shadow: #5d8aa2 0px 6px 14px;
     cursor: pointer;
     transform: scale(1.03); /*style drawn from Brian Design on Youtube https://www.youtube.com/watch?v=f4fB9Xg2JEY*/
@@ -90,14 +90,14 @@ h1, h2{
     margin-left: 10%;
     margin-bottom: 5%;
 }
-#option-one{
+#option-1{
     background-color: #d7baad;
     float: left;
     padding: 50px;
     width: 35%;
 }
 
-#option-two{
+#option-2{
     background-color: #d7baad;
     clear: both;
     padding: 50px;
@@ -105,7 +105,7 @@ h1, h2{
     display: inline-block;
 }
 
-#option-three{
+#option-3{
     background-color: #d7baad;
     clear: both;
     float: left;
@@ -115,7 +115,7 @@ h1, h2{
     
 }
 
-#option-four{
+#option-4{
     background-color: #d7baad;
     clear: both;
     padding: 50px;
@@ -197,27 +197,27 @@ h2 {
 }
 
 /*Quiz page*/
-#option-one{
+#option-1{
     float: none;
     width: 75%;
     margin-left: none;
     display: inline-block;
 }
-#option-two{
+#option-2{
     clear: none;
     float: none;
     width: 75%;
     margin-top: 10px;
 
 }
-#option-three{
+#option-3{
     clear: none;
     float: none;
     width: 75%;
     margin-top: 10px;
     display: inline-block;
 }
-#option-four{
+#option-4{
     clear: none;
     float: none;
     width: 75%;
