@@ -246,14 +246,14 @@ let start = true;
     console.log(counter);
 
     //The trigger to run the next question goes through the score-area
-    const questionElementOne = document.querySelector("#score-line-1")
-    const questionElementTwo = document.querySelector("#score-line-2")
+    const questionElementOne = document.querySelector("#score-line-1");
+    const questionElementTwo = document.querySelector("#score-line-2");
     console.log(questionElementOne, 'questionElement');
     /*Array element that connects to the question declaration 
     *array in myQuestions and if statements
     */
-    const myScoresOne = [0, 1, 2, 3, 4]
-    const myScoresTwo = [5, 6, 7, 8, 9]
+    const myScoresOne = [0, 1, 2, 3, 4];
+    const myScoresTwo = [5, 6, 7, 8, 9];
     console.log(myScoresTwo);
 
     //This function renders the scorecard with it's HTML elements
@@ -272,7 +272,7 @@ let start = true;
     renderScores();
     console.log('Scores');
     //Declaring the area where answers will be placed
-    const optionArea = document.querySelector("option-area");
+    const optionArea = document.querySelector("#option-area");
     console.log(optionArea, 'optionArea');
     /*Function that renders options to optionArea and questions 
     *to questionArea from myQuestions and loops through them all
@@ -330,7 +330,62 @@ let start = true;
     /*Function that loops through the scorecard and updates the
     *HTML elements with a fontawesome symbol and a change of colordesign
     */
-    function handleCheck (index, x){};
+    function handleCheck (index, x){
+        const selectedAnswerOne = myScoresOne.find(x => x == index);
+        const selectedAnswerTwo = myScoresTwo.find(x => x == index);
+
+        let scoreLineOne = document.getElementById(`${selectedAnswerOne}`);
+        let scoreLineTwo = document.getElementById(`${selectedAnswerTwo}`);
+        if(questionIndex <=4){
+            console.log('questionindex<5');
+            if(x.isCorrect == true) {
+                console.log('x.isCorrect');
+                scoreLineOne.innerHTML = '<i class="fa-solid fa-check"></i>';
+                scoreLineOne.style.backgroundColor = "#00cc99";
+                scoreLineOne.style.border = "#009973 solid";
+                score++
+            }else{
+                scoreLineOne.innerHTML = '<i class="fa-solid fa-x"></i>';
+                scoreLineOne.style.backgroundColor = "#ff6666";
+                scoreLineOne.style.border = "#cc0000 solid";
+            }
+            if (questionIndex <= 9){
+                clearQuestions ();
+                questionIndex++;
+                renderQuestions(questionIndex);
+            }else{
+                scoreTotal();
+            }
+        }else
+        if(questionIndex >=5 && questionIndex <=9){
+            console.log('questionIndex >=5 && questionIndex <=9');
+            if(x.isCorrect == true) {
+                console.log('x.isCorrect');
+                scoreLineTwo.innerHTML = '<i class="fa-solid fa-check"></i>';
+                scoreLineTwo.style.backgroundColor = "#00cc99";
+                scoreLineTwo.style.border = "#009973 solid";
+                score++
+            }else{
+                scoreLineTwo.innerHTML = '<i class="fa-solid fa-x"></i>';
+                scoreLineTwo.style.backgroundColor = "#ff6666";
+                scoreLineTwo.style.border = "#cc0000 solid";
+            }
+            if (questionIndex <= 9){
+                clearQuestions ();
+                questionIndex++;
+                renderQuestions(questionIndex);
+            }else{
+                scoreTotal();
+                console.log('scoreTotal');
+            }
+        }
+        
+        
+        
+    }
+    if (questionIndex < 10) {
+        renderQuestions(questionIndex);
+    };
 
 
 
