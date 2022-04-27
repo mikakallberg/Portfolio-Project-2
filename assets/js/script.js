@@ -225,27 +225,27 @@ console.log(score);
 console.log(counter);
 
 //The trigger to run the next question goes through the score-area
-const questionElementOne = document.querySelector("#score-line-1")
-const questionElementTwo = document.querySelector("#score-line-2")
+const questionElementOne = document.querySelector("#score-line-1");
+const questionElementTwo = document.querySelector("#score-line-2");
 console.log(questionElementOne, 'questionElement');
 /*Array element that connects to the question declaration 
 *array in myQuestions and if statements
 */
-const myScoresOne = [0, 1, 2, 3, 4]
-const myScoresTwo = [5, 6, 7, 8, 9]
+const myScoresOne = [0, 1, 2, 3, 4];
+const myScoresTwo = [5, 6, 7, 8, 9];
 console.log(myScoresTwo);
 
 //This function renders the scorecard with it's HTML elements
 function renderScores() {
 console.log('scores');
 myScoresOne.forEach(question => {
-        questionElementOne.innerHTML += `<h3 class="score-btn" id=${question}>${question + 1}</h3>`
+        questionElementOne.innerHTML += `<h3 class="score-btn" id=${question}>${question + 1}</h3>`;
     }),
     myScoresTwo.forEach(question => {
-        questionElementTwo.innerHTML += `<h3 class="score-btn" id=${question}>${question + 1}</h3>`
-    })
+        questionElementTwo.innerHTML += `<h3 class="score-btn" id=${question}>${question + 1}</h3>`;
+    });
 
-};
+}
 
 //Calling function renderScores
 renderScores();
@@ -259,8 +259,8 @@ console.log(optionArea, 'optionArea');
 function renderQuestions(index) {
 if (index > 9){
     scoreTotal ();
-    return
-};
+    return;
+}
 const question = myQuestions[index];
 const questionEl = document.getElementById("question-area");
 const option1 = document.getElementById('option-one');
@@ -268,17 +268,17 @@ const option2 = document.getElementById('option-two');
 const option3 = document.getElementById('option-three');
 const option4 = document.getElementById('option-four');
 console.log('question');
-questionEl.innerText = question.questionArea
+questionEl.innerText = question.questionArea;
 
 question.answers.forEach((x, i) => {
     optionArea.innerHTML += `
-        <div onclick='handleCheck(${JSON.stringify(index)}, ${JSON.stringify})' 
+        <div onclick='handleCheck(${JSON.stringify(index)}, ${JSON.stringify(x)})' 
         class="options" id='option-${i + 1}'>
         <p>${x.text}</p>
-        </div>`
+        </div>`;
 });
 console.log('question.answers');
-};
+}
 console.log('It ends here');
 
 //Function to clear all the question and option elements between the loops
@@ -287,7 +287,7 @@ console.log('clearQuestions');
 const questionEl = document.getElementById('question-area');
 questionEl.innerText = "";
 optionArea.innerHTML = "";
-};
+}
 console.log('or it ends here');
 
 /*Function that goes in to effect at the end of question 10
@@ -299,14 +299,14 @@ console.log('scoreTotal');
 clearQuestions();
 const questionEl = document.getElementById('question-area');
 if (score <= 4) {
-    questionEl.innerHTML = `<p>Well done you scored ${score} out of 10</p>`
+    questionEl.innerHTML = `<p>Well done you scored ${score} out of 10</p>`;
 } else if (score >= 5 && score <= 7) {
-    questionEl.innerHTML = `<p>Amazing you scored ${score} out of 10</p>`
+    questionEl.innerHTML = `<p>Amazing you scored ${score} out of 10</p>`;
 } else {
-    questionEl.innerHTML = `<p>Well hello there colleague! You scored ${score} out of 10, are you sure you are not a helathcare worker</p>`
+    questionEl.innerHTML = `<p>Well hello there colleague! You scored ${score} out of 10, are you sure you are not a helathcare worker</p>`;
 }
 console.log('where does it end?');
-};
+}
 console.log('does it end here?');
 
 //Declaring questionIndex beginning at 0
@@ -321,6 +321,7 @@ console.log('if statement');
 *HTML elements with a fontawesome symbol and a change of colordesign
 */
 function handleCheck(index, x) {
+    console.log('handleCheck');
 const selectedAnswerOne = myScoresOne.find(x => x == index);
 const selectedAnswerTwo = myScoresTwo.find(x => x == index);
 
@@ -333,7 +334,7 @@ if (questionIndex <= 4) {
         scoreLineOne.innerHTML = '<i class="fa-solid fa-check"></i>';
         scoreLineOne.style.backgroundColor = "#00cc99";
         scoreLineOne.style.border = "#009973 solid";
-        score++
+        score++;
     } else {
         scoreLineOne.innerHTML = '<i class="fa-solid fa-x"></i>';
         scoreLineOne.style.backgroundColor = "#ff6666";
@@ -345,6 +346,7 @@ if (questionIndex <= 4) {
         renderQuestions(questionIndex);
     } else {
         scoreTotal();
+        console.log('scoreTotal1');
     }
 } else if (questionIndex >= 5 && questionIndex <= 9) {
     console.log('questionIndex >=5 && questionIndex <=9');
@@ -353,7 +355,7 @@ if (questionIndex <= 4) {
         scoreLineTwo.innerHTML = '<i class="fa-solid fa-check"></i>';
         scoreLineTwo.style.backgroundColor = "#00cc99";
         scoreLineTwo.style.border = "#009973 solid";
-        score++
+        score++;
     } else {
         scoreLineTwo.innerHTML = '<i class="fa-solid fa-x"></i>';
         scoreLineTwo.style.backgroundColor = "#ff6666";
@@ -365,7 +367,7 @@ if (questionIndex <= 4) {
         renderQuestions(questionIndex);
     } else {
         scoreTotal();
-        console.log('scoreTotal');
+        console.log('scoreTotal2');
     }
 }
 }
