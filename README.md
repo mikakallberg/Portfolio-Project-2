@@ -78,21 +78,87 @@ The next question gets called automatically. All of this is rendered from JavaSc
 
 ### Features left to implement
 
-- There are som features that was planned, but not created
+- There are som features that was planned, but not created.
+- -An optional High Score page, so the user would be able to compare their result with others if they like.
+- -An indication for the user on which is the correct answer.
 
 ### Possible improvments
+- -The biggest improvement that could be done is to build the website for mobile first and then alter it in media query for browser window.
+- -The CSS could improve, there are little irregularities in the spacing and margins for the option area. 
+   The score buttons are slightly different. The score area gets left at the bottom on some smaller screens.
+   I was unable to work out display flex, justify content with text-align center.
+- -All of the elements could have been placed in one outer div, and then spans could have been used for question and score area.
+   This would have made it easier to hold them together when the board cleares and the screen size changes.
+- -The JavaScript could have been structured better, from the question area down, instead of score area down. For easier readability and to counter possible future bugs.
+   It is still understandable for other more experienced coders, but there is room for improvement on the JavaScript.
 
 ### Validator testing
 
+- I got my first fireworks in Lighthouse.
+![Lighthouse](assets/images/lighthouse-index-broswer.png)
+
+- The site http://ami.responsivedesign.is/# was used to test if the code was responsive on different screens, see image above.
+- DevTools have been used extensively to ensure that no objects are covering another object in different screen sizes. The score area ends up far down on the page on some screens sizes. Which is improvments can be made as stated above.
+- HTML code for both index.html and quiz.html have been passed through W3C validator with no errors. (https://validator.w3.org/)
+- CSS code has been passed thorugh W3C (Jigsaw) validator with no issues found. (https://jigsaw.w3.org/css-validator/)
+- JavaScript has been passed through JSHint, and came back with 5 variables unused. (https://jshint.com/)
+  - Option1
+  - Option2
+  - Option3
+  - Option4
+  - handleCheck
+
+   These are called and activated while running, as such they are not always used. 
+   If this could have been done again with more time, another way probably would have been found sooner.
+
+![W3C index](assets/images/w3c-vaildator.index.png)
+
+![W3C quiz](assets/images/w3c-validator.quiz.png)
+
+![Jigsaw](assets/images/w3c-jigsaw.png)
+
+![JSHint](assets/images/jshint.png)
+
 ### Bugs while working
-- Thought about putting HTML files in a folder, but while this looks good organizing the files, it doesn't work when site is launched. So back the files out and removed html folder.
+- The initial passing of index.html revealed a closing div that was added to line 21 at the end of an link attribute. This was solved.
+- JavaScript was hard to put together and understanding why to use different methods and functions, understanding the different pieces was okey. 
+But to then put it together as a whole and why, I had a lot of problem with. 
+So there where numerous bugs while working. Everything from calling the functions, to finding a good strategy to build the code itself.  
 
 ### Unfixed bugs
+- As of now there are no unfixed bugs that have been found in the different testing. 
 
 ### credits
-- color palette was picked from this source: https://colorswall.com/palette/6138 
+- Special thanks to:
+  My mentor Spencer Barriball for being there, healping me to understand why and connecting the dots of JavaScript.
+  Alumni Bim Williams (GitHub: mrBim) for teaching me to truly go through my JavaScript code methodically looking for problems
+  and for showing me so many tools that are at my disposal in GitPod and other websites to practise coding. I wish I would have talked to him sooner.
+  Fellow students:
+   Mats Simonsson (GitHub: Pelikantapeten) for the good advice and talks.
+   Dylan (GitHub: dylan097) for testing and finding problems in my CSS layout on small screens.
+   Dave Horrocks for trying to crash my site and taking it through the ringer, also thank you for all the advice on CSS, I wish I had asked you sooner.
+   Frankie Sanjana and Gina for trying my quiz.
+   And many many more of my fellow students and others on Slack, for the company and good talks, for trying my quiz and giving me feedback.
+- Brian Design (https://www.youtube.com/watch?v=f4fB9Xg2JEY*/) where I was able to get an idea of how to construct a quiz.
+- freeCodeCamp.org (https://www.youtube.com/watch?v=PkZNo7MFNFg) going through the majority of this video helped me practice and understand more.
+- https://developer.mozilla.org/en-US/
+- https://www.w3schools.com/
+- https://stackoverflow.com/ (never used to copy paste a code but to answer question on what something)
+- https://www.diffchecker.com/diff (was used so spot the difference at the end when one code worked and the other didn't)
+- https://www.thesitewizard.com/webdesign/create-good-filenames.shtml
+- https://html.com/semantic-markup/
+- https://www.sitepoint.com/simple-javascript-quiz/
+- https://github.com/Code-Institute-Solutions/readme-love-maths/blob/master/README.md (followed to write this README)
+- Love-Maths tutorial used to code alongside, for work structure.
+- https://trends.google.com/trends/explore?q=quiz,medical%20quiz,game,quiz%20game,medical%20game (to pick keywords for meta-element)
+
 
 ### content (sources for questions)
+- Color palette was picked from this source: https://colorswall.com/palette/6138 
+- Colors was then chosen with https://www.w3schools.com/colors/colors_picker.asp
+- Questions and answers are taken from Tortora's Principles of Anatomy and Physiology (G.J Tortora and B.H Derrickson, 15th Global edition (2017)) and 
+Sobotta Atlas of Human Anatomy (ed. F. Paulsen and J. Waschke. 15th edition with English Nomenclature and Latin Nomenclature(2011))
 
 ### media
+https://fontawesome.com
 
