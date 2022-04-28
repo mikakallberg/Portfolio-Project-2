@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr&family=Titan+One&display=swap');
 /*Setting for all pages*/
-*{
+*{ /*credit Brian Design on Youtube https://www.youtube.com/watch?v=f4fB9Xg2JEY*/
     padding: 0;
     margin: 0;
     border: none;
@@ -41,12 +41,6 @@ h1, h2{
     cursor: pointer;
     transform: scale(1.03); /*style drawn from Brian Design on Youtube https://www.youtube.com/watch?v=f4fB9Xg2JEY*/
 }
-
-/*fill username: .btn[disabled]:hover{
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-}*/
 
 /*Index page*/
 .game-area{
@@ -226,7 +220,7 @@ h2 {
 
 .score-area{
     clear: none;
-    margin-top: 20vh;
+    margin-top: 14vh;
 }
 
 #score-line-1{
@@ -261,7 +255,7 @@ h3{
 
     /*quiz page*/
     #question-area{
-        height: 35px;
+        height: 125px;
         padding: 1%;
         margin: 2% 10%;
     }
@@ -283,13 +277,13 @@ h3{
     
     .score-area{
         clear: both;
-        margin-top: 18vh;
+        margin-top: 20vh;
     }
     
     h3{
         font-size: 100%;
         padding: 10px 20px;
-        margin: 0 9px;
+        margin: 0 7px;
     }
     
     #scorebtn10{
@@ -300,7 +294,7 @@ h3{
     @media screen  and (max-width: 540px){
         
         .score-area{
-            margin-top: 25vh;
+            margin-top: auto;
         } 
         
     }
@@ -313,9 +307,6 @@ h3{
             font-size: 16px;
         }
         /*Quiz page*/
-        #question-area{
-            height: 70px;
-        }
 
         #option-area{
             width: 75%;
@@ -337,7 +328,7 @@ h3{
         .score-area{
             width: 90%;
             margin-left: 3%;
-            margin-top: 12vh
+            margin-top: auto;
         } 
         h3{
             padding: 5px 10px;
@@ -370,7 +361,7 @@ h3{
             margin-left: 16%;
         }
         .score-area{
-            margin-top: 11vh;
+            margin-top: auto;
             margin-left: 3%;
         } 
         
@@ -379,7 +370,7 @@ h3{
     @media screen  and (max-width: 350px){
         
         .score-area{
-            margin-top: 18vh;
+            margin-top: auto;
         } 
         
     }
@@ -389,7 +380,7 @@ h3{
         .score-area{
             width: 94%;
             margin-left: 2%;
-            margin-top: 32vh;
+            margin-top: auto;
         } 
         h3{
             margin: 0px 3px;

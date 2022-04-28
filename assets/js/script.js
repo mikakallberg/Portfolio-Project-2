@@ -299,11 +299,11 @@ console.log('scoreTotal');
 clearQuestions();
 const questionEl = document.getElementById('question-area');
 if (score <= 4) {
-    questionEl.innerHTML = `<p>Well done you scored ${score} out of 10</p>`;
+    questionEl.innerHTML = `<p>Well done you scored ${score} out of 10, want to play <a href="index.html" id="play-again">again?</a></p>`;
 } else if (score >= 5 && score <= 7) {
-    questionEl.innerHTML = `<p>Amazing you scored ${score} out of 10</p>`;
+    questionEl.innerHTML = `<p>Amazing you scored ${score} out of 10, want to play <a href="index.html" id="play-again">again?</a></p>`;
 } else {
-    questionEl.innerHTML = `<p>Well hello there colleague! You scored ${score} out of 10, are you sure you are not a helathcare worker</p>`;
+    questionEl.innerHTML = `<p>Well hello there colleague! You scored ${score} out of 10, are you sure you are not a healthcare worker, want to play <a href="index.html" id="play-again">again?</a></p>`;
 }
 console.log('where does it end?');
 }
