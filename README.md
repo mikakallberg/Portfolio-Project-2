@@ -1,6 +1,10 @@
-# the Medico Game
-Is an interactive game where the user can test their knowledge on human anatomy and physiology.
-There is the possibility to test only against yourself, or to test against other users in the high-score section.
+# the Medico Quiz
+Medico Quiz an interactive question game where the user can test their knowledge on human anatomy and physiology. 
+The difficulty level is such that both beginners and professionals hopefully can enjoy it.
+The target audience is international and for all ages.
+The goal of the layout is to add a calm atmosphere for the user.
+![Landing page for quiz](assets/images/amiresponsive-quiz.png) 
+![Landing page for welcome page](assets/images/amiresponsive-index-medium.png)
 
 Picture of Responsive mockup!
 

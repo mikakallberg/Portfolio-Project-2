@@ -46,7 +46,7 @@ const myQuestions = [{
 },
 {
     id: 2,
-    questionArea: 'In which solution does red blood cells swell?',
+    questionArea: 'In which solution do red blood cells swell?',
     answers: [{
             text: 'Isotonic solution',
             isCorrect: false
