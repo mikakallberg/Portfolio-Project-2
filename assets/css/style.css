@@ -27,6 +27,10 @@ h1, h2{
     margin-left: 10%;
 }
 
+#play-again{
+    color: #253741;
+}
+
 /*Shadows for all pages*/
 .heading, .game-area, #timer,.score-area{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; /*Code for shadown taken from https://getcssscan.com/css-box-shadow-examples*/
