@@ -23,15 +23,16 @@ Featured at the top of the page is the heading text, the design is meant to be f
 
 ![Welcome text and rules](assets/images/rules.png)
 
-As this is a game to do while relaxing, the rules are few and direct, to give the user quick but relevant information of what to expect when they press start quiz.
+As the intent of this quiz is for something to do while relaxing, the rules are kept few and direct, 
+to give the user the relevant information of what to expect when they press start quiz in a consice maner.
 
 - Start Quiz area
 
 ![Start button](assets/images/start-btn.png)
 
-The start quiz button is is the focus of the page, it's styled to stand out from the background. 
+The start quiz button is the focus of the page, it's styled to stand out from its background. 
 When hovering over the area the item raises up slighty, with shadow and an increase in of size. The cursor changes from an arrow to a hand. All to signal to the user that there is something clickable here.
-The size of the start quiz area changes size depending of which screen size this quiz is viewed.
+The size of the start quiz area changes size depending of which screen size this quiz is viewed, on the smallest screens the description and rules are more in focus, to have better readability.
 
 __The Quiz page__
 - question area
@@ -39,15 +40,15 @@ __The Quiz page__
 ![Question area](assets/images/question-area.png)
 
 When the user comes to the Quiz page, the over all design is the same, to continue the same feel of the Welcome page.The heading is the same.
-The design is still clean, it's easy to find information and get going intuitivly.
-The first question is dispalyed emediately and the has started. 
+The design is still clean, it's easy to find information and get going intuitively.
+The first question is displayed immediately and the quiz has started. 
 Since this game is to relax and not stress, but get a little bit of a challenge, there is no timer, the user can take all the time they want.
-The questions are a bit challenging, in testing people who do not have a medical background have scored 5 out of 10. 
+The questions are a bit challenging, in the testing fase, people who do not have a medical background have scored 5 out of 10. 
 The question area changes size depending on the size of the screen.
 The questions are rendered from JavaScript together with the options. 
 The question area is also the target JavaScript uses to display the users score after the last question is answered.
 The users total score is displayed together with three different message options, depending on the scoretotal. This is also rendered through JavaScript.
-At the end of each sentence is the offer to play again, this transport the user back to the Welcome page, so they can initate to start the quiz again.
+At the end of each sentence is the offer to play again, this transports the user back to the welcome page, so they can initate a new start.
 
 
 ![Scoremessage <4](assets/images/score-message-1.png)
@@ -71,34 +72,34 @@ When the user presses an option the board clears and a new question with options
 ![Score area](assets/images/score-area.png)
 
 The score area is where the user can keep track of which question they are on and if the option they selected was correct or not. 
-Initially the buttons are numbered, as the user progresses in the game, the buttons change design according to correct or incorrect answer.
+Initially the buttons are numbered, as the user progresses in the game, the buttons change design to give feedback about correct or incorrect answer.
 The next question gets called automatically. All of this is rendered from JavaScript, the divs with the IDs score-line-1 and score-line-2 are the targets for JavaScript.
 
 
 
 ### Features left to implement
 
-- There are som features that was planned, but not created.
-- -An optional High Score page, so the user would be able to compare their result with others if they like.
-- -An indication for the user on which is the correct answer.
+There are some features that was planned, but not created.
+- An optional High Score page, so the user would be able to compare their result with others if they like.
+- An indication for the user on which is the correct answer.
 
 ### Possible improvments
-- -The biggest improvement that could be done is to build the website for mobile first and then alter it in media query for browser window.
-- -The CSS could improve, there are little irregularities in the spacing and margins for the option area. 
+- The biggest improvement that could be done is to build the website for mobile first and then alter it in media query for browser window.
+- The CSS could improve, there are little irregularities in the spacing and margins for the option area. 
    The score buttons are slightly different. The score area gets left at the bottom on some smaller screens.
    I was unable to work out display flex, justify content with text-align center.
-- -All of the elements could have been placed in one outer div, and then spans could have been used for question and score area.
+- All of the elements could have been placed in one outer div, and then spans could have been used for question and score area.
    This would have made it easier to hold them together when the board cleares and the screen size changes.
-- -The JavaScript could have been structured better, from the question area down, instead of score area down. For easier readability and to counter possible future bugs.
-   It is still understandable for other more experienced coders, but there is room for improvement on the JavaScript.
+- The JavaScript could have been structured better, from the question area down, instead of score area down. For easier readability and to counter possible future bugs.
+   It is still understandable for other more experienced coders, but there is room for improvement on the JavaScript code.
 
 ### Validator testing
 
 - I got my first fireworks in Lighthouse.
 ![Lighthouse](assets/images/lighthouse-index-broswer.png)
 
-- The site http://ami.responsivedesign.is/# was used to test if the code was responsive on different screens, see image above.
-- DevTools have been used extensively to ensure that no objects are covering another object in different screen sizes. The score area ends up far down on the page on some screens sizes. Which is improvments can be made as stated above.
+- The site http://ami.responsivedesign.is/# was used to test if the code was responsive on different screens, see images above.
+- DevTools have been used extensively to ensure that no objects are covering another object in different screen sizes. The score area ends up far down on the page on some screens sizes. Improvments can be made as stated above.
 - HTML code for both index.html and quiz.html have been passed through W3C validator with no errors. (https://validator.w3.org/)
 - CSS code has been passed thorugh W3C (Jigsaw) validator with no issues found. (https://jigsaw.w3.org/css-validator/)
 - JavaScript has been passed through JSHint, and came back with 5 variables unused. (https://jshint.com/)
@@ -108,8 +109,8 @@ The next question gets called automatically. All of this is rendered from JavaSc
   - Option4
   - handleCheck
 
-   These are called and activated while running, as such they are not always used. 
-   If this could have been done again with more time, another way probably would have been found sooner.
+   These are called and activated while running, as such they are used even though it is not picked up in JSHint. 
+   If this product could have been done again with more time, another way would probably have been found.
 
 ![W3C index](assets/images/w3c-vaildator.index.png)
 
@@ -136,9 +137,10 @@ So there where numerous bugs while working. Everything from calling the function
   Fellow students:
    Mats Simonsson (GitHub: Pelikantapeten) for the good advice and talks.
    Dylan (GitHub: dylan097) for testing and finding problems in my CSS layout on small screens.
-   Dave Horrocks for trying to crash my site and taking it through the ringer, also thank you for all the advice on CSS, I wish I had asked you sooner.
-   Frankie Sanjana and Gina for trying my quiz.
-   And many many more of my fellow students and others on Slack, for the company and good talks, for trying my quiz and giving me feedback.
+   Dave Horrocks for taking my site through the ringer, also thank you for all the advice on CSS, I wish I had asked him sooner.
+   Frankie Sanjana (GitHub frankisanjana) and Gina for trying my quiz and giving me feedback.
+   And many many more of my fellow students and others on Slack, for the company and good talks, for trying my quiz.
+- for code on the different shadows credit is given to: https://getcssscan.com/css-box-shadow-examples
 - Brian Design (https://www.youtube.com/watch?v=f4fB9Xg2JEY*/) where I was able to get an idea of how to construct a quiz.
 - freeCodeCamp.org (https://www.youtube.com/watch?v=PkZNo7MFNFg) going through the majority of this video helped me practice and understand more.
 - https://developer.mozilla.org/en-US/ (never used to copy paste a code but to answer question on what something is)
@@ -161,7 +163,7 @@ Sobotta Atlas of Human Anatomy (ed. F. Paulsen and J. Waschke. 15th edition with
 
 ### media
 https://fontawesome.com
-- all images in this README have been produced my me (GitHub: mikakallberg).
+- all images in this README have been produced by me (GitHub: mikakallberg).
 
 Thank you for your time!
 
