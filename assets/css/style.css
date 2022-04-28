@@ -40,7 +40,7 @@ h1, h2{
     box-shadow: #5d8aa2 0px 3px 8px; /*Code for shadown taken from https://getcssscan.com/css-box-shadow-examples*/
 }
 
-#start-btn:hover, #option-1:hover, #option-2:hover, #option-3:hover, #option-4:hover{
+#start-btn:hover, #option-1:hover, #option-2:hover, #option-3:hover, #option-4:hover, #play-again:hover{
     box-shadow: #5d8aa2 0px 6px 14px;
     cursor: pointer;
     transform: scale(1.03); /*style drawn from Brian Design on Youtube https://www.youtube.com/watch?v=f4fB9Xg2JEY*/

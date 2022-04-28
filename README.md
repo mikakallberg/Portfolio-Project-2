@@ -44,12 +44,25 @@ The first question is dispalyed emediately and the has started.
 Since this game is to relax and not stress, but get a little bit of a challenge, there is no timer, the user can take all the time they want.
 The questions are a bit challenging, in testing people who do not have a medical background have scored 5 out of 10. 
 The question area changes size depending on the size of the screen.
+The questions are rendered from JavaScript together with the options. 
+The question area is also the target JavaScript uses to display the users score after the last question is answered.
+The users total score is displayed together with three different message options, depending on the scoretotal. This is also rendered through JavaScript.
+At the end of each sentence is the offer to play again, this transport the user back to the Welcome page, so they can initate to start the quiz again.
+
+
+![scoremessage <4](assets/images/score-message-1.png)
+
+![scoremessage >=5 && <=7](assets/images/score-message-2.png)
+
+![scoremessage 7<](assets/images/score-message%20-3.png)
 
 - options area
 
 ![options for quiz](assets/images/option-area.png)
 
 There are four options for each question and they are displayed in their own box. These boxes change apperance and position with screen size, but do not overlap.
+When hovered over the boxes are raised slightly, with a shadow, and increase in size and the cursor changes from an arrow to a hand. To indicate to the user that they can push something and what they are pushing. The option areas indiviual elements are rendered by JavaScript. Which is why the HTML only contains the outer Div to act as a target for JavaScript.
+
 - score area
 
 
