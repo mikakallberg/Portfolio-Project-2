@@ -179,7 +179,7 @@ h3{
     }
     
 }
-/* For smaller screens 1000px and down*/
+/* For medium and smaller screens 1000px and down*/
 @media screen and (max-width: 1000px){
     /*Index page*/
 .heading{
@@ -224,7 +224,7 @@ h2 {
 
 .score-area{
     clear: none;
-    margin-top: 14vh;
+    margin-top: 20vh;
 }
 
 #score-line-1{
@@ -294,11 +294,11 @@ h3{
         padding: 10px 20px;
     }
 
-    /*For Samsung Galaxy fold size screens 540px and down*/
+    /*For smaller size screens 540px and down*/
     @media screen  and (max-width: 540px){
         
         .score-area{
-            margin-top: auto;
+            margin-top: 25vh;
         } 
         
     }
@@ -332,7 +332,7 @@ h3{
         .score-area{
             width: 90%;
             margin-left: 3%;
-            margin-top: auto;
+            margin-top: 12vh;
         } 
         h3{
             padding: 5px 10px;
@@ -365,7 +365,7 @@ h3{
             margin-left: 16%;
         }
         .score-area{
-            margin-top: auto;
+            margin-top: 11vh;
             margin-left: 3%;
         } 
         
@@ -374,7 +374,7 @@ h3{
     @media screen  and (max-width: 350px){
         
         .score-area{
-            margin-top: auto;
+            margin-top: 25vh;
         } 
         
     }
@@ -384,7 +384,7 @@ h3{
         .score-area{
             width: 94%;
             margin-left: 2%;
-            margin-top: auto;
+            margin-top: 32vh;
         } 
         h3{
             margin: 0px 3px;
