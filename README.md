@@ -141,9 +141,9 @@ So there where numerous bugs while working. Everything from calling the function
    And many many more of my fellow students and others on Slack, for the company and good talks, for trying my quiz and giving me feedback.
 - Brian Design (https://www.youtube.com/watch?v=f4fB9Xg2JEY*/) where I was able to get an idea of how to construct a quiz.
 - freeCodeCamp.org (https://www.youtube.com/watch?v=PkZNo7MFNFg) going through the majority of this video helped me practice and understand more.
-- https://developer.mozilla.org/en-US/
-- https://www.w3schools.com/
-- https://stackoverflow.com/ (never used to copy paste a code but to answer question on what something)
+- https://developer.mozilla.org/en-US/ (never used to copy paste a code but to answer question on what something is)
+- https://www.w3schools.com/ (never used to copy paste a code but to answer question on what something is)
+- https://stackoverflow.com/ (never used to copy paste a code but to answer question on what something is)
 - https://www.diffchecker.com/diff (was used so spot the difference at the end when one code worked and the other didn't)
 - https://www.thesitewizard.com/webdesign/create-good-filenames.shtml
 - https://html.com/semantic-markup/
@@ -161,4 +161,7 @@ Sobotta Atlas of Human Anatomy (ed. F. Paulsen and J. Waschke. 15th edition with
 
 ### media
 https://fontawesome.com
+- all images in this README have been produced my me (GitHub: mikakallberg).
+
+Thank you for your time!
 
