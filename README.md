@@ -98,6 +98,7 @@ There are some features that was planned, but not created.
 - I got my first fireworks in Lighthouse.
 ![Lighthouse](assets/images/lighthouse-index-broswer.png)
 
+- The site is deployed via GitHub pages ucessfully: https://mikakallberg.github.io/Portfolio-Project-2/
 - The site http://ami.responsivedesign.is/# was used to test if the code was responsive on different screens, see images above.
 - DevTools have been used extensively to ensure that no objects are covering another object in different screen sizes. The score area ends up far down on the page on some screens sizes. Improvments can be made as stated above.
 - HTML code for both index.html and quiz.html have been passed through W3C validator with no errors. (https://validator.w3.org/)
@@ -120,11 +121,18 @@ There are some features that was planned, but not created.
 
 ![JSHint](assets/images/jshint.png)
 
+### Functionality on different browsers and screen sizes
+- down to a 1000px in width the layout is as shown above. From a 1000px and down the question area boxes are displayed one after the other instead of two in a row. 
+To maintain easy readability for the user. The alignment for the rest of the content stays the same, the space between the score area and the rest of the content varies depending on screen size and if the quiz is active or the total score is shown.
+
+![Screen layout on msaller screens](assets/images/screenlayout1000.png)
+
 ### Bugs while working
 - The initial passing of index.html revealed a closing div that was added to line 21 at the end of an link attribute. This was solved.
 - JavaScript was hard to put together and understanding why to use different methods and functions, understanding the different pieces was okey. 
 But to then put it together as a whole and why, I had a lot of problem with. 
 So there where numerous bugs while working. Everything from calling the functions, to finding a good strategy to build the code itself.  
+The most interesting bug was at the end, where one x was missing from line 275 in the rendering of option text. The error message in console only reffered to a general error, nothing specific.
 
 ### Unfixed bugs
 - As of now there are no unfixed bugs that have been found in the different testing. 

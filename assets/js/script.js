@@ -220,24 +220,18 @@ const myQuestions = [{
 let start = true;
 let score = 0;
 var counter = 0;
-console.log(start);
-console.log(score);
-console.log(counter);
 
 //The trigger to run the next question goes through the score-area
 const questionElementOne = document.querySelector("#score-line-1");
 const questionElementTwo = document.querySelector("#score-line-2");
-console.log(questionElementOne, 'questionElement');
 /*Array element that connects to the question declaration 
 *array in myQuestions and if statements
 */
 const myScoresOne = [0, 1, 2, 3, 4];
 const myScoresTwo = [5, 6, 7, 8, 9];
-console.log(myScoresTwo);
 
 //This function renders the scorecard with it's HTML elements
 function renderScores() {
-console.log('scores');
 myScoresOne.forEach(question => {
         questionElementOne.innerHTML += `<h3 class="score-btn" id=${question}>${question + 1}</h3>`;
     }),
@@ -249,10 +243,9 @@ myScoresOne.forEach(question => {
 
 //Calling function renderScores
 renderScores();
-console.log('Scores');
 //Declaring the area where answers will be placed
 const optionArea = document.querySelector("#option-area");
-console.log(optionArea, 'optionArea');
+
 /*Function that renders options to optionArea and questions 
 *to questionArea from myQuestions and loops through them all
 */
@@ -267,7 +260,7 @@ const option1 = document.getElementById('option-one');
 const option2 = document.getElementById('option-two');
 const option3 = document.getElementById('option-three');
 const option4 = document.getElementById('option-four');
-console.log('question');
+
 questionEl.innerText = question.questionArea;
 
 question.answers.forEach((x, i) => {
@@ -277,25 +270,20 @@ question.answers.forEach((x, i) => {
         <p>${x.text}</p>
         </div>`;
 });
-console.log('question.answers');
 }
-console.log('It ends here');
 
 //Function to clear all the question and option elements between the loops
 function clearQuestions() {
-console.log('clearQuestions');
 const questionEl = document.getElementById('question-area');
 questionEl.innerText = "";
 optionArea.innerHTML = "";
 }
-console.log('or it ends here');
 
 /*Function that goes in to effect at the end of question 10
 *it renders a pulls on the clearQuestions function and clears the board
 *while rendering a score message with the users score and a message
 */
 function scoreTotal() {
-console.log('scoreTotal');
 clearQuestions();
 const questionEl = document.getElementById('question-area');
 if (score <= 4) {
@@ -305,32 +293,26 @@ if (score <= 4) {
 } else {
     questionEl.innerHTML = `<p>Well hello there colleague! You scored ${score} out of 10, are you sure you are not a healthcare worker, want to play <a href="index.html" id="play-again">again?</a></p>`;
 }
-console.log('where does it end?');
 }
-console.log('does it end here?');
 
 //Declaring questionIndex beginning at 0
 let questionIndex = 0;{
 if (questionIndex < 10) {
     renderQuestions(questionIndex);
 }
-console.log('if statement');
 };
 
 /*Function that loops through the scorecard and updates the
 *HTML elements with a fontawesome symbol and a change of colordesign
 */
 function handleCheck(index, x) {
-    console.log('handleCheck');
 const selectedAnswerOne = myScoresOne.find(x => x == index);
 const selectedAnswerTwo = myScoresTwo.find(x => x == index);
 
 let scoreLineOne = document.getElementById(`${selectedAnswerOne}`);
 let scoreLineTwo = document.getElementById(`${selectedAnswerTwo}`);
 if (questionIndex <= 4) {
-    console.log('questionindex<5');
     if (x.isCorrect == true) {
-        console.log('x.isCorrect');
         scoreLineOne.innerHTML = '<i class="fa-solid fa-check"></i>';
         scoreLineOne.style.backgroundColor = "#00cc99";
         scoreLineOne.style.border = "#009973 solid";
@@ -346,12 +328,9 @@ if (questionIndex <= 4) {
         renderQuestions(questionIndex);
     } else {
         scoreTotal();
-        console.log('scoreTotal1');
     }
 } else if (questionIndex >= 5 && questionIndex <= 9) {
-    console.log('questionIndex >=5 && questionIndex <=9');
     if (x.isCorrect == true) {
-        console.log('x.isCorrect');
         scoreLineTwo.innerHTML = '<i class="fa-solid fa-check"></i>';
         scoreLineTwo.style.backgroundColor = "#00cc99";
         scoreLineTwo.style.border = "#009973 solid";
@@ -367,7 +346,6 @@ if (questionIndex <= 4) {
         renderQuestions(questionIndex);
     } else {
         scoreTotal();
-        console.log('scoreTotal2');
     }
 }
 }
