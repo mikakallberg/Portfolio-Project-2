@@ -314,7 +314,7 @@ h3{
         }
         /*Quiz page*/
         #question-area{
-            height: 52px;
+            height: 70px;
         }
 
         #option-area{
@@ -391,6 +391,9 @@ h3{
             margin-left: 2%;
             margin-top: 32vh;
         } 
+        h3{
+            margin: 0px 3px;
+        }
         
     }
     
