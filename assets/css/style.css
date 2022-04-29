@@ -181,67 +181,64 @@ h3{
 }
 /* For medium and smaller screens 1000px and down*/
 @media screen and (max-width: 1000px){
-    /*Index page*/
-.heading{
-    font-size: 2rem;
-}
+/*Index page*/
+    .heading{
+        font-size: 2rem;
+    }
 
-#start-btn{
-    padding: 50px;
-}
+    #start-btn{
+        padding: 50px;
+    }
 
-h2 {
-    margin-top: 50px;
-}
+    h2 {
+        margin-top: 50px;
+    }
 
 /*Quiz page*/
-#option-1{
-    float: none;
-    width: 75%;
-    margin-left: 0;
-    display: inline-block;
-}
-#option-2{
-    clear: none;
-    float: none;
-    width: 75%;
-    margin-top: 10px;
+    #option-1{
+        float: none;
+        width: 75%;
+        margin-left: 0;
+        display: inline-block;
+    }
+    #option-2{
+        clear: none;
+        float: none;
+        width: 75%;
+        margin-top: 10px;
+    }
+    #option-3{
+        clear: none;
+        float: none;
+        width: 75%;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    #option-4{
+        clear: none;
+        float: none;
+        width: 75%;
+        margin-top: 10px;
+    }
 
-}
-#option-3{
-    clear: none;
-    float: none;
-    width: 75%;
-    margin-top: 10px;
-    display: inline-block;
-}
-#option-4{
-    clear: none;
-    float: none;
-    width: 75%;
-    margin-top: 10px;
-}
+    .score-area{
+        clear: none;
+        margin-top: 20vh;
+    }
+    #score-line-1{
+        padding: 2% 0 5%;
+        margin-top: 0;
+        display: inline-block;
+        width: 100%;
+    }
+    #score-line-2{
+        display: inline-block;
+        width: 100%;
+    }
 
-.score-area{
-    clear: none;
-    margin-top: 20vh;
-}
-
-#score-line-1{
-    padding: 2% 0 5%;
-    margin-top: 0;
-    display: inline-block;
-    width: 100%;
-}
-
-#score-line-2{
-    display: inline-block;
-    width: 100%;
-}
-
-h3{
-    margin: 0 20px;
-}
+    h3{
+        margin: 0 20px;
+    }
     
 }
 
@@ -253,7 +250,8 @@ h3{
 
     #start-btn{
         padding: 40px;
-    }h2 {
+    }
+    h2 {
         margin-top: 20px;
     }
 
@@ -293,103 +291,101 @@ h3{
     #scorebtn10{
         padding: 10px 20px;
     }
+}
+/*For smaller size screens 540px and down*/
+@media screen  and (max-width: 540px){
+        
+    .score-area{
+        margin-top: 25vh;
+    } 
+        
+}
 
-    /*For smaller size screens 540px and down*/
-    @media screen  and (max-width: 540px){
-        
-        .score-area{
-            margin-top: 25vh;
-        } 
-        
+/*For very small screens 500px and down*/
+@media screen and (max-width: 500px){
+/*Index page*/
+    #start-btn{
+        padding: 0;
+        font-size: 16px;
+    }
+/*Quiz page*/
+
+    #option-area{
+        width: 75%;
+        margin-left: 9%;
+    }
+    #option-1{
+        padding: 25px;
+    }
+    #option-2{
+        padding: 25px;
+    }
+    #option-3{
+        padding: 25px;
+    }
+    #option-4{
+        padding: 25px;
     }
 
-    /*For very small screens 500px and down*/
-    @media screen and (max-width: 500px){
-        /*Index page*/
-        #start-btn{
-            padding: 0;
-            font-size: 16px;
-        }
-        /*Quiz page*/
-
-        #option-area{
-            width: 75%;
-            margin-left: 9%;
-        }
-        #option-1{
-            padding: 25px;
-        }
-        #option-2{
-            padding: 25px;
-        }
-        #option-3{
-            padding: 25px;
-        }
-        #option-4{
-            padding: 25px;
-        }
-
-        .score-area{
-            width: 90%;
-            margin-left: 3%;
-            margin-top: 12vh;
-        } 
-        h3{
-            padding: 5px 10px;
-        }
-        #scorebtn10{
-            padding: 5px 10px;
-        }
-    
+    .score-area{
+        width: 90%;
+        margin-left: 3%;
+        margin-top: 12vh;
+    } 
+    h3{
+        padding: 5px 10px;
     }
-    /*For iPhone SE size screens 430px and down*/
-    @media screen  and (max-width: 430px){
-        #option-area{
-            width: 75%;
-            margin-left: 5%;
-        }
-        #option-1{
-            padding: 15px;
-            margin-left: 16%;
-        }
-        #option-2{
-            padding: 15px;
-            margin-left: 16%;
-        }
-        #option-3{
-            padding: 15px;
-            margin-left: 16%;
-        }
-        #option-4{
-            padding: 15px;
-            margin-left: 16%;
-        }
-        .score-area{
-            margin-top: 11vh;
-            margin-left: 3%;
-        } 
-        
-    }
-    /*For Samsung Galaxy fold size screens 350px and down*/
-    @media screen  and (max-width: 350px){
-        
-        .score-area{
-            margin-top: 25vh;
-        } 
-        
-    }
-    /*For Samsung Galaxy fold size screens 300px and down*/
-    @media screen  and (max-width: 300px){
-        
-        .score-area{
-            width: 94%;
-            margin-left: 2%;
-            margin-top: 32vh;
-        } 
-        h3{
-            margin: 0px 3px;
-        }
-        
+    #scorebtn10{
+        padding: 5px 10px;
     }
     
+}
+/*For iPhone SE size screens 430px and down*/
+@media screen  and (max-width: 430px){
+    #option-area{
+        width: 75%;
+        margin-left: 5%;
+    }
+    #option-1{
+        padding: 15px;
+        margin-left: 16%;
+    }
+    #option-2{
+        padding: 15px;
+        margin-left: 16%;
+    }
+    #option-3{
+        padding: 15px;
+        margin-left: 16%;
+    }
+    #option-4{
+        padding: 15px;
+        margin-left: 16%;
+    }
+    .score-area{
+        margin-top: 11vh;
+        margin-left: 3%;
+    } 
+        
+}
+/*For Samsung Galaxy fold size screens 350px and down*/
+@media screen  and (max-width: 350px){
+        
+    .score-area{
+        margin-top: 25vh;
+    } 
+        
+}
+/*For Samsung Galaxy fold size screens 300px and down*/
+@media screen  and (max-width: 300px){
+        
+    .score-area{
+        width: 94%;
+        margin-left: 2%;
+        margin-top: 32vh;
+    } 
+    h3{
+        margin: 0px 3px;
+    }
+        
 }
